@@ -1,4 +1,4 @@
-site_name: NextUI Wiki
+site_name: NextUI Docs
 site_url: https://nextui.loveretro.games
 repo_url: https://github.com/LoveRetro/NextUI
 edit_uri: https://github.com/LoveRetro/nextui-wiki/edit/main/docs/
@@ -72,7 +72,7 @@ plugins:
   - macros
 
 nav:
-  - Wiki Home: wiki.md
+  - Docs Home: docs.md
   - Getting Started:
       - getting-started/index.md
       - Installation: getting-started/installation.md
@@ -90,5 +90,5 @@ nav:
       - Making a Pak: paks/making-a-pak.md
   - Support:
       - Frequently Asked Questions: support/faq.md
-  - Back to Homepage:
+  - NextUI Homepage:
       - index.md

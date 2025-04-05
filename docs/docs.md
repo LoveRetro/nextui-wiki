@@ -1,7 +1,7 @@
 <img src="../_inc/images/brick-nextui-animated-black.webp" alt="NextUI Animated on TrimUI Brick" class="docs-logo docs-logo-light" />
 <img src="../_inc/images/brick-nextui-animated-white.webp" alt="NextUI Animated on TrimUI Brick" class="docs-logo docs-logo-dark" />
 
-# **Welcome to the NextUI Wiki!**
+# **Welcome to the NextUI Docs!**
 
 A powerful but understated CFW for TrimUI Brick & Smart Pro. [:simple-github:]({{ urls.github }})
 

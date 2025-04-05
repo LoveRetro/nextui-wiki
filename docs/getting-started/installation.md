@@ -2,7 +2,7 @@
 
 1. Insert the micro SD Card into your computer.
 2. Ensure that the SD Card is formatted as a FAT32 filesystem.
-    - If not, use the specified tools in [getting started](/getting-started) to format the card as FAT32.
+    - If not, use the specified tools in [getting started](index.md) to format the card as FAT32.
     - :octicons-alert-fill-16: Formatting will erase all data from the SD Card. If there is anything important
       on the card please back it up.
 3. Find and unzip `base.zip` that you downloaded from the [GitHub Releases Page]({{ urls.github}}/releases).

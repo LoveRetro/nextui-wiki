@@ -12,6 +12,8 @@ When one or more folder share the same display name (eg. "Game Boy Advance (GBA)
 will be combined into a single menu item containing the roms from both folders (continuing the previous example, "Game
 Boy Advance"). This allows opening specific roms with an alternate pak.
 
+---
+
 ## Disc-based games
 
 To streamline launching multi-file disc-based games with NextUI place your bin/cue (and/or iso/wav files) in a folder
@@ -56,6 +58,8 @@ NextUI also supports chd files and official pbp files (multi-disc pbp files larg
 Regardless of the multi-disc file format used, every disc of the same game share the same memory card and save state
 slots.
 
+---
+
 ## Collections
 
 A collection is just a text file containing an ordered list of full paths to rom, cue, or m3u files. These text files
@@ -72,6 +76,8 @@ this:
 If you disable all viable folders under 'Roms', the 'Collections' folders contents will populate the main screen instead
 of being nested in the 'Collections' folder in the UI.
 
+---
+
 ## Display names
 
 Certain (unsupported arcade) cores require roms to use arcane file names. You can override the display name used
@@ -85,22 +91,31 @@ name. eg. The 'Collections' folder needs its own map.txt file as well.
   sf2.zip	Street Fighter II
 ```
 
+---
 
-
-# Adding Cheats
+## Adding Cheats
 
 Cheats use RetroArch .cht file format. Many cheat files
 are [here](https://github.com/libretro/libretro-database/tree/master/cht).
 
-Cheat file name needs to match ROM name, and go underneath the "Cheats" directory. For example,
-`/Cheats/GB/Super Mario Land (World).zip.cht`. When a cheat file is detected, it will show up in the "cheats" menu item
-ingame. Not all cheats work with all cores, may want to clean up files to just the cheats you want.
+Cheat file name needs to match ROM name, and go underneath the "Cheats" directory.
 
-# Adding BoxArt
+For example, `/Cheats/GB/Super Mario Land (World).zip.cht`.
 
-NextUI looks for accompanying media for each emulator under /Roms/[Emulator]/.media folder.
-Create the .media folder if not already present.
+When a cheat file is detected, it will show up in the "cheats" menu item in game.
+
+Note: Not all cheats work with all cores.
+
+---
+
+## Adding Box Art
+
+NextUI looks for accompanying media for each emulator under `/Roms/[Emulator]/.media`.
+
+Create the .media folder if does not exist.
+
 Put an image in PNG format with the exact same name as the ROM file.  
+
 NextUI will automatically scale or resize the media file.
 
 For example:

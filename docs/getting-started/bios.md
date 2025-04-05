@@ -1,4 +1,4 @@
-# Adding BIOS
+# Required BIOS
 
 Some emulators require or perform better with the official BIOS.
 

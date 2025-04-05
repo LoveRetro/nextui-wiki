@@ -34,7 +34,7 @@ theme:
     - navigation.tabs
     - navigation.tracking
     - toc.follow
-#    - toc.integrate
+    - toc.integrate
     - search.suggest
     - content.tooltips
     - content.code.copy
@@ -70,13 +70,17 @@ nav:
   - Getting Started:
       - getting-started/index.md
       - Installation: getting-started/installation.md
+      - Updating: getting-started/updating.md
       - Adding ROMs: getting-started/roms.md
       - Required BIOS: getting-started/bios.md
-  - Configuring:
-      - Updating: configure/updating.md
-      - Installing Paks: configure/installing-paks.md
-      - Theming: configure/theming.md
+      - Managing Saves: getting-started/managing-saves.md
+  - Customizing:
+      - Overlays: customizing/theming/overlays.md
+      - Emulator Icons: customizing/theming/emulator-icons.md
+  - Paks:
+      - paks/index.md
+      - Community Favorites: paks/community-favorites.md
+      - Standalone Emulators: paks/standalone-emulators.md
+      - Making a Pak: paks/making-a-pak.md
   - Support:
-      - support/index.md
       - Frequently Asked Questions: support/faq.md
-      - Troubleshooting: support/troubleshooting.md

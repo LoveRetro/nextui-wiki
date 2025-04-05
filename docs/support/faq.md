@@ -9,9 +9,9 @@ You can always find the latest NextUI release on our [GitHub Repo]({{ urls.githu
 
 ## How do I install / update?
 
-For a fresh install of NextUI, follow our [installation guide](/use/installation).
+For a fresh install of NextUI, follow our [installation guide](../getting-started/installation.md).
 
-Already a NextUI user? Follow our [updating guide](/use/updating) to grab the latest release.
+Already a NextUI user? Follow our [updating guide](../getting-started/updating.md) to grab the latest release.
 
 ## What systems are supported?
 
@@ -41,4 +41,4 @@ Already a NextUI user? Follow our [updating guide](/use/updating) to grab the la
 
 Ensure that you have a `Roms` folder at the root of your SD Card with at least one ROM file.
 
-For more info visit the [add roms](/getting-started/roms) page.
+For more info visit the [add roms](../getting-started/roms.md) page.

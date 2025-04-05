@@ -1,2 +1,0 @@
-# NextUI Help Resources
-

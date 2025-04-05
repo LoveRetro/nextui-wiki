@@ -107,14 +107,21 @@ a {
     font-weight: bold;
 }
 
-.docs-logo {
-    width: 75% !important;
+@media (max-width: 600px) {
+    .docs-logo {
+        width: 75% !important;
+    }
 }
 
-/*[data-md-color-scheme="nextui-wiki-light"] .docs-logo-dark {*/
-/*    display: none !important;*/
-/*}*/
+.docs-logo {
+    max-width: 500px !important;
+}
 
-/*[data-md-color-scheme="nextui-wiki-dark"] .docs-logo-light {*/
-/*    display: none !important;*/
-/*}*/
+[data-md-color-scheme="nextui-wiki-light"] .docs-logo-dark {
+    display: none !important;
+}
+
+[data-md-color-scheme="nextui-wiki-dark"] .docs-logo-light {
+    display: none !important;
+}
+

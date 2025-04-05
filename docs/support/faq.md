@@ -7,11 +7,15 @@ the [Discord :simple-discord: ]({{ urls.discord }}).
 
 You can always find the latest NextUI release on our [GitHub Repo]({{ urls.github }}).
 
+---
+
 ## How do I install / update?
 
 For a fresh install of NextUI, follow our [installation guide](../getting-started/installation.md).
 
 Already a NextUI user? Follow our [updating guide](../getting-started/updating.md) to grab the latest release.
+
+---
 
 ## What systems are supported?
 
@@ -33,9 +37,11 @@ Already a NextUI user? Follow our [updating guide](../getting-started/updating.m
 * Sega Game Gear
 * Sega Master System
 * Super Game Boy
-* TurboGrafx-16(and TurboGrafx-CD)
+* TurboGrafx-16 (and TurboGrafx-CD)
 * Virtual Boy
-* Arcade(CPS, MAME, etc)
+* Arcade (CPS, MAME, etc)
+
+---
 
 ## Why am I only seeing Tools?
 

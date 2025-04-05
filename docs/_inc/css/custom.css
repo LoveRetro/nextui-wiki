@@ -103,6 +103,12 @@
     font-size: .74rem;
 }
 
+.md-typeset .admonition, .md-typeset details {
+    background-color: inherit;
+    color: inherit
+}
+
+
 a {
     font-weight: bold;
 }

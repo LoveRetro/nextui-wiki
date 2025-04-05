@@ -1,14 +1,16 @@
 # Getting Started with NextUI
 
-> :octicons-alert-fill-24: **Read before continuing!**
->
-> NextUI **officially supports only** the TrimUI Brick and the TrimUI Smart Pro.
->
-> These steps in this wiki based on those devices with the stock operating system.
->
-> Before beginning, please upgrade to the latest version.
->
-> [TrimUI GitHub :simple-github:](https://github.com/trimui).
+!!! warning "Read before continuing!"
+
+    NextUI **officially supports only** the TrimUI Brick and the TrimUI Smart Pro.
+    
+    These steps in this wiki based on those devices with the stock operating system.
+
+    Before beginning, please upgrade to the latest version.
+    
+    [TrimUI GitHub :simple-github:](https://github.com/trimui)
+
+
 
 ## What you will need
 

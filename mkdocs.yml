@@ -7,11 +7,16 @@ copyright: © 2025 NextUI Contributors
 
 theme:
   name: material
+  custom_dir: landing
   logo: _inc/images/nextui-logo.png
   favicon: _inc/images/favicon.png
   font:
     text: Raleway
     code: Fira Code
+  icon:
+    admonition:
+      warning: octicons/alert-24
+      info: octicons/info-24
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -60,13 +65,14 @@ markdown_extensions:
   - toc:
       toc_depth: 3
       permalink: 🔗
+  - admonition
 
 plugins:
   - search
   - macros
 
 nav:
-  - Home: index.md
+  - Wiki Home: wiki.md
   - Getting Started:
       - getting-started/index.md
       - Installation: getting-started/installation.md
@@ -84,3 +90,5 @@ nav:
       - Making a Pak: paks/making-a-pak.md
   - Support:
       - Frequently Asked Questions: support/faq.md
+  - Back to Homepage:
+      - index.md

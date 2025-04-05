@@ -8,7 +8,7 @@ NextUI is strictly BYOB and will not provide them nor links to them.
 
 Use the table below to help you find and install the BIOS files you need.
 
-:octicons-alert-fill-16:  BIOS file names are case-sensitive!
+!!! warning "BIOS file names are case-sensitive!"
 
 | System               | Tag  | File Name(s)                               | BIOS Directory                                                                                              |
 |----------------------|------|--------------------------------------------|-------------------------------------------------------------------------------------------------------------|

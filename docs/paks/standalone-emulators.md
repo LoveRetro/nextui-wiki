@@ -1,8 +1,7 @@
 # Standalone Emulator Paks
 
-> :octicons-alert-fill-24: **A quick note about standalone emulators!**
->
-> Standalone emulators do not support overlays and are not as tightly integrated into NextUI.
+!!! info "A quick note about standalone emulators!"
+    Standalone emulators do not support overlays and are not as tightly integrated into NextUI.
 
 - [Dreamcast](https://github.com/josegonzalez/minui-dreamcast-pak)
 - [Nintendo DS](https://github.com/josegonzalez/minui-nintendo-ds-pak)

@@ -105,25 +105,3 @@ For example, `/Cheats/GB/Super Mario Land (World).zip.cht`.
 When a cheat file is detected, it will show up in the "cheats" menu item in game.
 
 Note: Not all cheats work with all cores.
-
----
-
-## Adding Box Art
-
-NextUI looks for accompanying media for each emulator under `/Roms/[Emulator]/.media`.
-
-Create the .media folder if does not exist.
-
-Put an image in PNG format with the exact same name as the ROM file.  
-
-NextUI will automatically scale or resize the media file.
-
-For example:
-
-```
-ROM: /Roms/Emulator/game.zip
-Media: /Roms/Emulator/.media/game.png
-```
-
-
-

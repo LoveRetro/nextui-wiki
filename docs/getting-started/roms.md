@@ -1,24 +1,26 @@
 # Adding ROMs
 
-NextUI automatically creates a "Roms" folder at the SD card root containing folders for each console NextUI currently
-supports.
+NextUI creates a `Roms` folder at the SD Card Root containing folders for each console currently
+supported.
 
-You can rename these folders however you like; however, you must keep the uppercase tag name in parentheses in
-order to retain the mapping to the correct emulator (eg. "Nintendo Entertainment System (FC)" could be renamed to "
-Nintendo (FC)", "NES (
-FC)", or "Famicom (FC)").
+You can rename these folders as you like; however, you must keep the uppercase tag name in parentheses in
+order to retain the mapping to the correct emulator.
 
-When one or more folder share the same display name (eg. "Game Boy Advance (GBA)" and "Game Boy Advance (MGBA)") they
-will be combined into a single menu item containing the roms from both folders (continuing the previous example, "Game
-Boy Advance"). This allows opening specific roms with an alternate pak.
+!!! example "Example: Nintendo Entertainment System (FC) can be renamed to Nintendo (FC) or NES (FC) or Famicom (FC)"
+
+If multiple folders share the same name, eg. `Game Boy Advance (GBA)` and `Game Boy Advance (MGBA)`, they
+will be combined into a single menu item containing the ROMs from both folders.
+
+A ROM selected from this combined menu item will launch using the emulator in the tag of the folder is lives in.
 
 ---
 
 ## Disc-based games
 
-To streamline launching multi-file disc-based games with NextUI place your bin/cue (and/or iso/wav files) in a folder
-with the same name as the cue file. NextUI will automatically launch the cue file instead of navigating into the folder
-when selected, e.g.
+To streamline launching multi-file disc-based games, place your BIN / CUE files in a folder
+with the same name as the CUE file.
+
+NextUI will automatically launch the CUE file instead of navigating into the folder when selected.
 
 ```
   Tony Hawk's Pro Skater 2 (USA)/
@@ -26,10 +28,16 @@ when selected, e.g.
       Tony Hawk's Pro Skater 2 (USA).cue
 ```
 
-For multi-disc games, put all the files for all the discs in a single folder. Then create an m3u file in that folder (
-just a text file containing the relative path to each disc's cue file on a separate line) with the same name as the
-folder. Instead of showing the entire messy contents of the folder, NextUI will launch the appropriate cue file, eg. For
-a "Final Fantasy VII" folder structured like this:
+For multi-disc games, follow these steps.
+
+1. Create a folder for your disc files.
+2. Put all the disc files into this folder.
+3. Then create a `.m3u` file that matches the name of the folder created in step one.
+4. Edit the `.m3u` file by adding the relative path to each disc's cue file, one file per line.
+
+NextUI will automatically launch the CUE file instead of navigating into the folder when selected.
+
+For example, Final Fantasy VII has three discs:
 
 ```
   Final Fantasy VII (USA)/
@@ -42,28 +50,29 @@ a "Final Fantasy VII" folder structured like this:
     Final Fantasy VII (USA) (Disc 3).cue
 ```
 
-The m3u file would contain just:
+The `.m3u` file for FF7 would contain:
 
 ```
   Final Fantasy VII (USA) (Disc 1).cue
   Final Fantasy VII (USA) (Disc 2).cue
   Final Fantasy VII (USA) (Disc 3).cue
-  ...
 ```
 
-When a multi-disc game is detected the in-game menu's Continue item will also show the current disc. Press left or right
-to switch between discs.
+When you are playing a multi-disc game the NextUI In Game Menu will display the current disc.
 
-NextUI also supports chd files and official pbp files (multi-disc pbp files larger than 2GB are not supported).
-Regardless of the multi-disc file format used, every disc of the same game share the same memory card and save state
-slots.
+Use `left` or `right` on the D-Pad to change discs.
+
+NextUI also supports `.chd` files and `.pbp` files under 2GB.
+
+!!! info "Multi-disc games share the same memory card and save state slots across all discs."
 
 ---
 
 ## Collections
 
 A collection is just a text file containing an ordered list of full paths to rom, cue, or m3u files. These text files
-live in the "Collections" folder at the root of your SD card, eg. "/Collections/Metroid series.txt" might look like
+live in the "Collections" folder at the root of your SD card, eg. `SDCARD_ROOT/Collections/Metroid series.txt` might
+look like
 this:
 
 ```
@@ -73,7 +82,7 @@ this:
   /Roms/GBA/Metroid Fusion.gba
 ```
 
-If you disable all viable folders under 'Roms', the 'Collections' folders contents will populate the main screen instead
+If you disable all visible folders under 'Roms', the 'Collections' folders contents will populate the main menu instead
 of being nested in the 'Collections' folder in the UI.
 
 ---
@@ -92,16 +101,3 @@ name. eg. The 'Collections' folder needs its own map.txt file as well.
 ```
 
 ---
-
-## Adding Cheats
-
-Cheats use RetroArch .cht file format. Many cheat files
-are [here](https://github.com/libretro/libretro-database/tree/master/cht).
-
-Cheat file name needs to match ROM name, and go underneath the "Cheats" directory.
-
-For example, `/Cheats/GB/Super Mario Land (World).zip.cht`.
-
-When a cheat file is detected, it will show up in the "cheats" menu item in game.
-
-Note: Not all cheats work with all cores.

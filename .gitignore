@@ -1,2 +1,4 @@
 .idea
 *.iml
+/marketing/node_modules/
+/docs/_marketing/*

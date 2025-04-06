@@ -9,8 +9,10 @@ If you have a game at `/Roms/Emulator/game.zip`, then the corresponding artwork 
 For a more concrete example:
 
 ```
-# With an SFC game at:
+# With an SFC game located at:
 # /Roms/SFC/My Awesome Game.smc
+# The Box Art or In-game Preview is located at:
+
 /Roms/SFC/.media/My Awesome Game.png
 ```
 

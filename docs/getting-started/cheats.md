@@ -8,7 +8,7 @@ Cheat filenames needs to match the ROM name, including the ROM extension.
 Place the cheat file in `SDCARD_ROOT/{System}/`.
 
 !!! example "Cheat Filepath Example"
-ROM Filename: `Super Mario Land (World).zip`
+    ROM Filename: `Super Mario Land (World).zip`
 
     ROM Location: `SDCARD_ROOT/Roms/GB/`
 

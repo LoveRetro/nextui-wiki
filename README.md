@@ -1,4 +1,4 @@
-# NextUI Wiki
+# NextUI Docs
 
 ## Local Development Setup
 

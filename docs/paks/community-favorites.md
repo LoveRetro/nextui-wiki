@@ -23,7 +23,7 @@ organized
 
 [Gallery](https://github.com/josegonzalez/minui-gallery-pak) a simple gallery for your screenshots
 
-[Mortar](https://github.com/UncleJunVIP/Mortar.pak) a download client that supports RomM, SMB, Megathread, and more with built-in Libretro Artwork support.
+[Mortar](https://github.com/UncleJunVIP/Mortar.pak) a download client that supports RomM, SMB, Megathread, and more with built-in Libretro Artwork support
 
 [Random Game](https://github.com/josegonzalez/minui-random-game-pak) loads a random game in your game library
 
@@ -35,7 +35,7 @@ using the function keys
 ## File Management
 
 [Cloud Backups](https://github.com/ben16w/minui-cloud-backups) a Pak to back up saves, screenshots
-and other folders to cloud storage providers like Google Drive and Dropbox.
+and other folders to cloud storage providers like Google Drive and Dropbox
 
 [Filebrowser](https://github.com/josegonzalez/trimui-brick-filebrowser-pak) HTTP Server via Filebrowser, what OnionOS
 uses

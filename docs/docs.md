@@ -65,7 +65,7 @@ It features a rebuilt emulation engine and tons of added features outlined below
 
 - [ ] Configurable function and switch buttons
 
-- [ ] More compatibility testing with different emulators and fix/improve if necessary
+- [ ] More compatibility testing with different emulators and fix / improve if necessary
 
 - [ ] RetroAchievements
 

@@ -59,14 +59,19 @@ It features a rebuilt emulation engine and tons of added features outlined below
 
 # Future Plans
 
-- Bluetooth and wifi integrated
-- Configurable FN and switch buttons
-- More compatibility testing with different emulators and fix/improve if necessary
-- RetroAchievements
-- Shaders
-- Probably we think of a lot of other stuff a long the way to add :D
-- Once everything is to my liking I will look into porting this to more devices
-- Clean up all MinUI code and strip it from all stuff for legacy devices etc.
+- [ ] PAL ROM mode
+
+- [ ] Bluetooth and Wi-Fi integrated
+
+- [ ] Configurable function and switch buttons
+
+- [ ] More compatibility testing with different emulators and fix/improve if necessary
+
+- [ ] RetroAchievements
+
+- [ ] Shaders
+
+- [ ] Clean up all MinUI code and strip it from all stuff for legacy devices etc.
 
 ---
 

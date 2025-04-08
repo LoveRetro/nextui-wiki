@@ -3,7 +3,7 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import {Battery, Clock, Cpu, Gamepad2, Palette, Zap} from "lucide-react"
 import Image from "next/image"
 
-export default function Home() {
+export default function Page() {
     return (
         <div className="flex flex-col min-h-screen">
             <nav className="bg-gray-950 text-white py-3">

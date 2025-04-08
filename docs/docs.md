@@ -48,6 +48,7 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - Support for automatic NTP time synchronization with timezones and realtime clock (RTC)
 - Deep Sleep mode, gives instant ON and avoids the overheat bug on the Brick
   by [@zhaofengli](https://github.com/zhaofengli)
+- Customizable screen and sleep timeout (Including "Never")
 - Battery Monitoring including history graph and time left prediction
 - Scrolling animated titles for longer game names
 - Updated and optimized build emulation cores

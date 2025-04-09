@@ -16,6 +16,8 @@ On home screen, select `Tools`, then select `LedControl`.
 
 The app provides the following options.
 
+---
+
 ### LED Selection
 
 The TrimUI Brick has the following configurable LEDs.
@@ -25,6 +27,8 @@ The TrimUI Brick has the following configurable LEDs.
 - One LED bar on the top of the device
 
 When in the LED Control App you can use `Left Trigger` and `Right Trigger` to cycle between these LEDs.
+
+---
 
 ### Effects
 
@@ -39,17 +43,25 @@ Each LED can be configured with the following effects.
 | Breathe          | Slowly increase the brightness and slowly decrease the brightness                                        |
 | Interval Breathe | Slowly increase the brightness and slowly decrease the brightness, with a longer pause between "breaths" |
 
+---
+
 ### Color
 
 The color of LEDs. Use `Left` and `Right` on the `D-Pad` to cycle through the colors.
+
+---
 
 ### Speed
 
 The speed of breathing effect in milliseconds.
 
+---
+
 ### Brightness
 
 The brightness level of the LEDs. Setting this to `0` will turn the LED off.
+
+---
 
 ### Info Brightness
 
@@ -61,6 +73,8 @@ Currently, this is only supported by:
 - Front Function Button LED blinking when entering sleep
 
 Setting brightness to `0` will turn the LED off.
+
+---
 
 ### Ambient Mode
 

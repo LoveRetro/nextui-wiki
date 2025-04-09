@@ -7,7 +7,7 @@ copyright: © 2025 NextUI Contributors
 
 theme:
   name: material
-  custom_dir: docs/_marketing
+  custom_dir: marketing/out
   logo: _inc/images/nextui-logo.png
   favicon: _inc/images/favicon.png
   font:
@@ -33,18 +33,21 @@ theme:
         name: Switch to light mode
   features:
     - content.action.edit
-    - navigation.top
-    - navigation.indexes
-    - navigation.path
-    - navigation.sections
-    - navigation.tabs
-    - navigation.tracking
-    - toc.follow
-    - toc.integrate
-    - search.suggest
-    - content.tooltips
     - content.code.copy
     - content.code.annotate
+    - content.tooltips
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
 
 extra_css:
   - _inc/css/custom.css

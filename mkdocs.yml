@@ -38,7 +38,6 @@ theme:
     - content.tooltips
     - navigation.expand
     - navigation.indexes
-    - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking

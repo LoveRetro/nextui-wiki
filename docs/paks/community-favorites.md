@@ -23,6 +23,8 @@ organized
 
 [Gallery](https://github.com/josegonzalez/minui-gallery-pak) a simple gallery for your screenshots
 
+[Game Manager](https://github.com/UncleJunVIP/nextui-game-manager) a one-stop pak for all your game management needs
+
 [Mortar](https://github.com/UncleJunVIP/Mortar.pak) a download client that supports RomM, SMB, Megathread, and more with built-in Libretro Artwork support
 
 [Random Game](https://github.com/josegonzalez/minui-random-game-pak) loads a random game in your game library

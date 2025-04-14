@@ -91,6 +91,7 @@ nav:
       - Overlays: customizing/theming/overlays.md
       - Emulator Icons: customizing/theming/emulator-icons.md
       - Game Artwork: customizing/game-artwork.md
+      - Custom Categories: customizing/custom-categories.md
   - Paks:
       - paks/index.md
       - Community Favorites: paks/community-favorites.md

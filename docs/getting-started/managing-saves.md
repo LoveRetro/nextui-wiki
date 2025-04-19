@@ -6,7 +6,7 @@ NextUI places all save files by system in `SDCARD_ROOT/Saves`.
 
 By default, NextUI uses the emulator's default save file format.
 
-To enable RetroArch .srm save support create a blank file in `SDCARD_ROOT/.userdata/shared`.
+RetroArch .srm save support can be enabled in Settings.
 
 After making this change any existing save files will have to be renamed.
 

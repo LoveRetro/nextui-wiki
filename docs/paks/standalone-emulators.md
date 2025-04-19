@@ -7,6 +7,7 @@
 - [Nintendo DS](https://github.com/josegonzalez/minui-nintendo-ds-pak)
 - [Nintendo 64](https://github.com/josegonzalez/minui-n64-pak)
 - [Pico-8](https://github.com/josegonzalez/minui-pico-8-pak)
+- [PSP](https://github.com/ben16w/minui-psp) - **supports Deep Sleep!**
 
 # Installing Standalone Emulators
 

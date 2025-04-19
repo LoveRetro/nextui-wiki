@@ -10,14 +10,14 @@ In this folder you can add 5 overlay PNG files, named overlay1.png to overlay5.p
 For example:
 
 ```
-# For /Roms/Game Boy Color (GBA)
+# For /Roms/Game Boy Advance (GBA)
 /Overlays/GBA/overlay1.png
 /Overlays/GBA/overlay2.png
 /Overlays/GBA/overlay3.png
 /Overlays/GBA/overlay4.png
 /Overlays/GBA/overlay5.png
 
-# For /Roms/Super Nintendo (SFC)
+# For /Roms/Super Nintendo Entertainment System (SFC)
 /Overlays/SFC/overlay1.png
 /Overlays/SFC/overlay2.png
 /Overlays/SFC/overlay3.png

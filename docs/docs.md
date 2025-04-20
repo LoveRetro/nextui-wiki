@@ -67,17 +67,10 @@ It features a rebuilt emulation engine and tons of added features outlined below
 
 # Future Plans
 
-- [ ] Bluetooth integrated
-
-- [ ] Configurable function buttons
-
-- [ ] More compatibility testing with different emulators and fix / improve if necessary
-
 - [ ] RetroAchievements
-
-- [ ] Shaders
-
-- [ ] Clean up all MinUI code and strip it from all stuff for legacy devices etc.
+- [ ] Bluetooth integrated
+- [ ] Configurable function buttons
+- [ ] More compatibility testing with different emulators and fix / improve if necessary
 
 ---
 

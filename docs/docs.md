@@ -31,6 +31,8 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - High quality audio, due to advanced resampling engine
   using [libsamplerate](https://github.com/libsndfile/libsamplerate) (with quality/performance setting per emulator)
 - Much lower latency (average 20ms, 1 frame of 60fps)
+- Shaders!
+- Fully OpenGL/GPU based for faster performance!
 - native WiFi support
 - Game art/media support
 - Game time tracker!

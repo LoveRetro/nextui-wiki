@@ -31,10 +31,14 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - High quality audio, due to advanced resampling engine
   using [libsamplerate](https://github.com/libsndfile/libsamplerate) (with quality/performance setting per emulator)
 - Much lower latency (average 20ms, 1 frame of 60fps)
+- Shaders!
+- Fully OpenGL/GPU based for faster performance!
+- native WiFi support
 - Game art/media support
 - Game time tracker!
 - Cheats support
 - Overlays support!
+- Broader zip file support (bz2, LZMA)
 - Dynamic cpu speed scaling (keeps your device cool and extends battery life, but gives the performance right when
   needed)
 - Custom bootlogos contributed by [@SolvalouArt](https://bsky.app/profile/solvalouart.bsky.social)
@@ -45,6 +49,7 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - Haptic feedback in the menu by [@ExonakiDev](https://github.com/exonakidev)
 - Ambient LED mode, the LEDS act like Ambient light TV's for extra immersion, configurable per emulator
 - Display controls (color temperature, brightness, contrast, saturation, exposure)
+- Configurable FN/Mute switch that can trigger a "night mode" - toggle between two sets of custom display settings!
 - Support for automatic NTP time synchronization with timezones and realtime clock (RTC)
 - Deep Sleep mode, gives instant ON and avoids the overheat bug on the Brick
   by [@zhaofengli](https://github.com/zhaofengli)
@@ -62,19 +67,10 @@ It features a rebuilt emulation engine and tons of added features outlined below
 
 # Future Plans
 
-- [ ] PAL ROM mode
-
-- [ ] Bluetooth and Wi-Fi integrated
-
-- [ ] Configurable function and switch buttons
-
-- [ ] More compatibility testing with different emulators and fix / improve if necessary
-
 - [ ] RetroAchievements
-
-- [ ] Shaders
-
-- [ ] Clean up all MinUI code and strip it from all stuff for legacy devices etc.
+- [ ] Bluetooth integrated
+- [ ] Configurable function buttons
+- [ ] More compatibility testing with different emulators and fix / improve if necessary
 
 ---
 

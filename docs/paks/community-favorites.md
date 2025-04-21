@@ -4,9 +4,6 @@ This is a non-exhaustive list of Paks beloved by our community.
 
 ## The Must Haves
 
-[Wi-Fi](https://github.com/josegonzalez/trimui-brick-wifi-pak) shows Wi-Fi status, scans for networks, and lets you
-configure a connection all on device
-
 [OTA Updater](https://github.com/LanderN/nextui-updater-pak) a Pak for updating NextUI on-device (aka OTA), Wi-Fi
 connection is required
 
@@ -52,6 +49,11 @@ a Web UI
 
 [Syncthing](https://github.com/josegonzalez/trimui-brick-syncthing-pak) runs Syncthing on your device, for syncing
 against a remote Syncthing server
+
+---
+
+## Theming
+[NextUI-Themes](https://github.com/Leviathanium/NextUI-Themes) for all theming needs, with Import/Export functionality and predefined themes
 
 ---
 

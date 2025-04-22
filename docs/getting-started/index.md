@@ -2,9 +2,9 @@
 
 !!! warning "Read before continuing!"
 
-    NextUI **officially supports only** the TrimUI Brick and the TrimUI Smart Pro.
+    NextUI **officially supports** the TrimUI Brick and the TrimUI Smart Pro.
     
-    These steps in this wiki based on those devices with the stock operating system.
+    The steps outlined here only apply to these two devices running the stock operating system.
 
     Before beginning, please upgrade to the latest version.
     

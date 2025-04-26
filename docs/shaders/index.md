@@ -146,7 +146,7 @@ But like I said shaders are not only used for scaling, since they are just littl
 - Distort the screen or enhance colors, etc.  
 
 **Feel free to experiment!**  
-Try different shaders, different combinations, and find the look that feels best for your games.
+Try different shaders, different combinations, and find the look that feels best for your games. You can download any glsl file and place it in the `/Shaders` folder on your SDCard to use it within NextUI. But remember it has to be the glsl file which is the actual shader program, we currently do not yet support the glsp shader preset files. But these are simple text files and you can open them to view the settings and replicate them in the shaders menu. 
 
 **Enjoy! 🎮**
 

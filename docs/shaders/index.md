@@ -162,8 +162,9 @@ It’s a simple effect, but it adds a lot of nostalgic charm!
 
 Here's the idea:
 
-- Setting **Source** as the **Source/Texture Types** tells the shader to look at the original output from the emulator — the real, original pixels.
-- Setting the **Scale** to **Screen** means the shader will output an image with a grid drawn over it (where the grid itself is based on the original pixel size) at the screen’s resolution. The upscaling happens here, and no further upscaling is needed afterward since the output is already at the correct size.
+- Setting **Source** as the **Source/Texture Types** tells the shader to use the original dimensions from the emulator output — the real, original pixel layout. However, for the actual pixel data, it still uses the output from the previous shader step.  
+- While we're at it: **Relative** means "use the dimensions of the previous shader step," and **Screen** means "use the dimensions of the screen" (with aspect ratio correction applied).
+- Setting the **Scale** to **Screen** means the shader will output an image with a grid drawn over it (where the grid itself is based on the original pixel size) at the screen’s resolution. The upscaling happens here, and no further upscaling is needed afterwards since the output is already at the correct size by this shader by setting it to screen.
 
 So, the `lcd3x` shader creates a grid based on the original pixel size but with an output size that covers the entire screen.  
 You end up with an LCD-style grid that perfectly matches the original pixel layout, giving each pixel a distinct look — while in reality, the image is being upscaled to your screen’s full resolution.  

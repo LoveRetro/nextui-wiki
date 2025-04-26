@@ -163,9 +163,12 @@ It’s a simple effect, but it adds a lot of nostalgic charm!
 Here's the idea:
 
 - Setting **Source** as the texture tells the shader to look at the original output from the emulator — the real, original pixels.
-- Setting the **Scale** to **Screen** means the shader will stretch that grid to match the full screen size.
+- Setting the **Scale** to **Screen** means the shader will output that grid (which is drawn based on the original pixel size) to match the full screen size.
 
-So, the `lcd3x` shader creates a grid scaled at the source original pixel size but then displayed over the entire screen.
+So, the `lcd3x` shader creates a grid based on the original pixel size but with an output size that covers the entire screen.  
+You end up with an LCD-style grid that perfectly matches the original pixel layout, giving each pixel a distinct look — while in reality, the image is being upscaled to your screen’s full resolution.  
+It looks like your Game Boy screen suddenly has four times as many pixels!
+
 
 ---
 

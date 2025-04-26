@@ -168,7 +168,7 @@ Here's the idea:
 
 So, the `lcd3x` shader creates a grid based on the original pixel size but with an output size that covers the entire screen.  
 You end up with an LCD-style grid that perfectly matches the original pixel layout, giving each pixel a distinct look — while in reality, the image is being upscaled to your screen’s full resolution.  
-It looks like your Game Boy screen suddenly has four times as many pixels!
+It looks like your Game Boy screen suddenly has four times as many pixels. If that ain't cool I don't know what is! 
 
 
 ---

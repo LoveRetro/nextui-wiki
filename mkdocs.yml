@@ -97,6 +97,8 @@ nav:
       - Community Favorites: paks/community-favorites.md
       - Standalone Emulators: paks/standalone-emulators.md
       - Making a Pak: paks/making-a-pak.md
+  - Shaders:
+      - shaders/index.md
   - Support:
       - Frequently Asked Questions: support/faq.md
   - NextUI Homepage:

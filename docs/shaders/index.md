@@ -76,12 +76,12 @@ First, let’s set a shader to upscale the image 2× using NEAREST:
 **Go to:**
 > Options → Shaders
 
-And set the following:
-**Number of shaders:** 1 (we only need one)
-**Shader 1:** `stock.glsl` (basic shader that just outputs the input image)
-**Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale first!)
-**Source type:** Relative or Source (doesn’t matter — they’re the same for the first shader)
-**Texture type:** Relative or Source
+And set the following:  
+**Number of shaders:** 1 (we only need one)  
+**Shader 1:** `stock.glsl` (basic shader that just outputs the input image)  
+**Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale first!)  
+**Source type:** Relative or Source (doesn’t matter — they’re the same for the first shader)  
+**Texture type:** Relative or Source  
 **Scale:** 2 or 3  
   (Use 2× for SNES, MD, etc., or 3× for very small images like GB/GBC.)
 

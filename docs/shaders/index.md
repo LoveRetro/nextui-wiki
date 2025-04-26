@@ -10,14 +10,13 @@ The first is **NEAREST**, which is faster because it’s less complex. It simply
 The second option is **LINEAR**. This costs a little more performance-wise, but instead of just doubling pixels, it applies linear interpolation between pixels, creating a smoother, softer look.  
 This can definitely create a more even, pleasant image — but again, it depends heavily on what the original source image looks like. If your emulator is outputting a very small image, LINEAR interpolation has to invent a lot of new pixels to fill the screen, and the result can look very blurry.
 
+![NEAREST](https://github.com/user-attachments/assets/7ba31112-f778-4426-860f-2b39b7966121)
+![LINEAR](https://github.com/user-attachments/assets/21fd9408-2d80-429b-9bf8-9114baeb6f6b)
+
 The takeaway here is simple:  
 **The smaller the original image the GPU receives to upscale to your screen’s resolution, the worse it will look.**  
 Neither NEAREST nor LINEAR can magically make a tiny 320×240 image look amazing on a big 1024×768 screen.  
 That’s just been a fact of life since the early days of computers.
-
-![NEAREST](https://github.com/user-attachments/assets/7ba31112-f778-4426-860f-2b39b7966121)
-![LINEAR](https://github.com/user-attachments/assets/21fd9408-2d80-429b-9bf8-9114baeb6f6b)
-
 
 ---
 

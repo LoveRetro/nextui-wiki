@@ -96,7 +96,7 @@ export default function Page() {
                             <FeatureCard
                                 icon={<Cpu className="w-12 h-12 text-[#9b2256]"/>}
                                 title="Advanced Features"
-                                description="Our emulator cores have cheats, overlays, and high-quality audio."
+                                description="Our emulator cores have cheats, overlays, shaders and more."
                                 imageUrl="/images/overlay.png"
                             />
                             <FeatureCard

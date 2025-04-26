@@ -181,11 +181,6 @@ That means:
 
 > **The final image sharpness is controlled inside Shader 2 itself, not by the frontend option anymore.**
 
-Because we’re overlaying a grid and we want to keep the pixel edges nice and clean, **I recommend using NEAREST** for Shader 2's filter.  
-(If you used LINEAR here, it would blur the grid itself, which usually doesn't look as good.)
-
-However, feel free to try LINEAR too — since we already did a NEAREST upscale in Shader 1, a slight blur from LINEAR in Shader 2 can sometimes create a softer, blended look that you might prefer.  
-**It's totally up to your personal taste!**
 
 ---
 

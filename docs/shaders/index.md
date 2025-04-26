@@ -85,7 +85,7 @@ Example:
 
 **Result?**  
 It looks *way* better!  
-Because LINEAR now only has to invent half as many pixels, and it’s working with a much sharper, more detailed starting point.
+Because LINEAR now only has to invent half as many pixels as it’s working with a bigger starting point.
 
 ![LINEAR with 2x NEAREST prescale](https://github.com/user-attachments/assets/a4c9b575-d010-493b-93c8-d1dd7b666b79)
 

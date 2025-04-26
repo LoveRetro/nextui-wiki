@@ -15,12 +15,17 @@ The takeaway here is simple:
 Neither NEAREST nor LINEAR can magically make a tiny 320×240 image look amazing on a big 1024×768 screen.  
 That’s just been a fact of life since the early days of computers.
 
+![NEAREST](https://github.com/user-attachments/assets/7ba31112-f778-4426-860f-2b39b7966121)
+![LINEAR](https://github.com/user-attachments/assets/21fd9408-2d80-429b-9bf8-9114baeb6f6b)
+
+
 ---
 
 Now, if you really just want to *rawdog* the tiny emulator output directly to the screen for maximum performance, I recommend using **NEAREST**.  
 LINEAR usually just ends up looking too blurry, while NEAREST faithfully replicates the pixels from the source, simply making the image bigger — simple and sharp.
 
 ---
+
 
 So, does that mean old games will *always* look like crap on modern screens?
 
@@ -66,6 +71,8 @@ Example:
 **Result?**  
 It looks *way* better!  
 Because LINEAR now only has to invent half as many pixels, and it’s working with a much sharper, more detailed starting point.
+
+![LINEAR with 2x NEAREST prescale](https://github.com/user-attachments/assets/a4c9b575-d010-493b-93c8-d1dd7b666b79)
 
 ---
 
@@ -146,6 +153,9 @@ Set everything up the same way as above, **but now set the number of shaders to 
 
 This setup applies an additional shader called `lcd3x`, which overlays a grid on the image to mimic the look of original Game Boy, Game Boy Color, and GBA screens.  
 It’s a simple effect, but it adds a lot of nostalgic charm!
+
+![lcd3x](https://github.com/user-attachments/assets/6ef9bd8c-e192-4861-975f-00d2ec165649)
+
 
 ---
 

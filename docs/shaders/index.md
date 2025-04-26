@@ -1,5 +1,19 @@
 # Shaders Explanation
 
+**A Little Introduction**
+
+In today's world, most of us have screens with resolutions of at least 1920×1080 and higher. However, back in the days of our favorite retro games, this was far from the case. Older TVs operated at around 720×525 resolution, and handheld devices like Game Boys had even lower resolutions.
+
+While we enjoy our collections of retro games today, there's one big problem: our modern screens usually have resolutions far beyond what these games were originally designed for. In practice, this means we either play our games in a tiny square in the middle of our screens to preserve their original resolution, or (what most of us prefer) we scale the image up to better fit our modern, high-resolution displays.
+
+There are really three main scaling modes you can choose from in the frontend options under Screen Scaling:
+
+- Native – This keeps the game at its original resolution, resulting in that tiny box in the center of your screen.  
+- Aspect – This scales the image to your screen while maintaining the original aspect ratio, so nothing looks distorted (no "fat" Super Mario). It scales the image up until either the width or height reaches the screen size. This often leaves empty space on the sides or top and bottom, unless you're lucky enough to have a screen that matches the original aspect ratio exactly.  
+- Full Screen Stretch – This simply stretches the image to fill the entire screen without preserving the aspect ratio. While it fills the screen nicely, it can make things look strange if the original and screen aspect ratios don't match.  
+
+Ultimately, the choice is yours based on what you prefer. However, understanding screen scaling is important because it plays a big role in how shaders are used — although scaling isn't the only reason shaders are popular, it is a major one.
+
 **Options → Frontend → Screen Sharpness**
 
 First, let’s talk a little about this option.  

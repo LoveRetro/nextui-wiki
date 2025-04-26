@@ -77,12 +77,12 @@ First, let’s set a shader to upscale the image 2× using NEAREST:
 > Options → Shaders
 
 And set the following:  
-**Number of shaders:** 1 (we only need one)  
-**Shader 1:** `stock.glsl` (basic shader that just outputs the input image)  
-**Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale first!)  
-**Source type:** Relative or Source (doesn’t matter — they’re the same for the first shader)  
-**Texture type:** Relative or Source  
-**Scale:** 2 or 3  
+- **Number of shaders:** 1 (we only need one)  
+- **Shader 1:** `stock.glsl` (basic shader that just outputs the input image)  
+- **Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale first!)  
+- **Source type:** Relative or Source (doesn’t matter — they’re the same for the first shader)  
+- **Texture type:** Relative or Source  
+- **Scale:** 2 or 3  
   (Use 2× for SNES, MD, etc., or 3× for very small images like GB/GBC.)
 
 ---
@@ -126,3 +126,56 @@ There are tons of shaders out there (`.glsl` files) that do all kinds of fun thi
 Try different shaders, different combinations, and find the look that feels best for your games.
 
 **Enjoy! 🎮**
+
+## BONUS: GB/GBC/GBA Tip!
+
+Want to make your Game Boy, Game Boy Color, and Game Boy Advance games look even cooler? Here's a quick bonus trick!
+
+Set everything up the same way as above, **but now set the number of shaders to 2** and configure the second shader like this:
+
+- **Number of shaders:** 2  
+- **Shader 2:** `lcd3x.glsl` (a shader that overlays a pixel grid, simulating old handheld screens)  
+- **Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale here!)  
+- **Source type:** Source (important — I’ll explain why below)  
+- **Texture type:** Source  
+- **Scale:** Screen  
+
+---
+
+### What This Does
+
+This setup applies an additional shader called `lcd3x`, which overlays a grid on the image to mimic the look of original Game Boy, Game Boy Color, and GBA screens.  
+It’s a simple effect, but it adds a lot of nostalgic charm!
+
+---
+
+### Why Use **Source** and **Screen**?
+
+Here's the idea:
+
+- Setting **Source** as the texture tells the shader to look at the original output from the emulator — the real, original pixels.
+- Setting the **Scale** to **Screen** means the shader will stretch that grid to match the full screen size.
+
+So, the `lcd3x` shader creates a grid based on the original pixel layout, then scales that grid up to perfectly fit your screen.
+
+---
+
+### Important Note About Filtering
+
+Since Shader 2 is already stretching the image up to full screen, **the frontend's Screen Sharpness setting no longer matters.**  
+At this point, the image is already at its final size before it even reaches the frontend’s final filter.
+
+That means:
+
+> **The final image sharpness is controlled inside Shader 2 itself, not by the frontend option anymore.**
+
+Because we’re overlaying a grid and we want to keep the pixel edges nice and clean, **I recommend using NEAREST** for Shader 2's filter.  
+(If you used LINEAR here, it would blur the grid itself, which usually doesn't look as good.)
+
+However, feel free to try LINEAR too — since we already did a NEAREST upscale in Shader 1, a slight blur from LINEAR in Shader 2 can sometimes create a softer, blended look that you might prefer.  
+**It's totally up to your personal taste!**
+
+---
+
+That's it — now you’ve got a sharp, beautiful pixel grid overlay just like an old-school Game Boy screen! 🎮🖤
+

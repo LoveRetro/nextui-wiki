@@ -136,7 +136,7 @@ And set this to **LINEAR**.
 The "world of shaders" is all about **chaining small steps together** — each shader alters the image slightly before passing it along.
 
 - **Choosing NEAREST or LINEAR only matters when the step involves resizing.**  
-If a shader step uses a Scale of 1 (no scaling), the NEAREST or LINEAR setting has no effect at all. The same goes for the screen sharpness setting in frontend options. If an image already is at screen size before it reaches this final step then the  final filter does nothing because it doesn't have to up or downscale anymore. NEAREST and LINEAR only apply when the image has to resize either up or down. 
+If a shader step uses a Scale of 1 (no scaling), the NEAREST or LINEAR setting has no effect at all. The same goes for the screen sharpness setting in frontend options. If an image already is at screen size before it reaches this final step then the  final filter does nothing because it doesn't have to up or downscale anymore. NEAREST and LINEAR only apply when the image has to resize either up or down. Its not a filter applying to the image, it just tells the GPU what method to use when up (or down) scaling an image. 
 
 There are tons of shaders out there (`.glsl` files) that do all kinds of fun things:
 - Simulate CRT screens

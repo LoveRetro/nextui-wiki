@@ -14,6 +14,8 @@ There are really three main scaling modes you can choose from in the frontend op
 
 Ultimately, the choice is yours based on what you prefer. However, understanding screen scaling is important because it plays a big role in how shaders are used — although scaling isn't the only reason shaders are popular, it is a major one.
 
+## Lets get shady!
+
 **Options → Frontend → Screen Sharpness**
 
 First, let’s talk a little about this option.  

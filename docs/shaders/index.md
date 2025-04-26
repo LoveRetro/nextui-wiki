@@ -135,7 +135,7 @@ Set everything up the same way as above, **but now set the number of shaders to 
 
 - **Number of shaders:** 2  
 - **Shader 2:** `lcd3x.glsl` (a shader that overlays a pixel grid, simulating old handheld screens)  
-- **Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale here!)  
+- **Filter:** NEAREST (NEAREST recommended for a sharp grid, but LINEAR could work more for you)  
 - **Source type:** Source (important — I’ll explain why below)  
 - **Texture type:** Source  
 - **Scale:** Screen  

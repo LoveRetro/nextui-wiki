@@ -156,7 +156,7 @@ Here's the idea:
 - Setting **Source** as the texture tells the shader to look at the original output from the emulator — the real, original pixels.
 - Setting the **Scale** to **Screen** means the shader will stretch that grid to match the full screen size.
 
-So, the `lcd3x` shader creates a grid based on the original pixel layout, then scales that grid up to perfectly fit your screen.
+So, the `lcd3x` shader creates a grid scaled at the source original pixel size but then displayed over the entire screen.
 
 ---
 

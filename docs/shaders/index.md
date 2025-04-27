@@ -129,6 +129,14 @@ And set this to **LINEAR**.
 
 **And the result already looks MUCH better, right?**
 
+First one is without shaders just straight NEAREST upscaling to fullscreen, second one is using above settings making things a little more smoother and nicer, this looks really good on the Brick's high dpi screen.
+![Super Mario World 2025-04-26-16-27-31](https://github.com/user-attachments/assets/7e3f42b3-e73f-4bf0-b8c2-6b9c98be56fb)
+![Super Mario World 2025-04-26-16-27-21](https://github.com/user-attachments/assets/fd6907b0-ee21-46d6-a07d-b51c33bd9b01)
+
+
+
+
+
 ---
 
 ## A Few Final Notes

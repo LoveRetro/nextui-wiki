@@ -4,6 +4,8 @@ This is a non-exhaustive list of Paks beloved by our community.
 
 ### The Must Haves
 
+[Pak Store](https://github.com/UncleJunVIP/nextui-pak-store) install, update and manage paks, all on your device!
+
 [OTA Updater](https://github.com/LanderN/nextui-updater-pak) a Pak for updating NextUI on-device (aka OTA), Wi-Fi
 connection is required
 

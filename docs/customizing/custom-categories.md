@@ -1,8 +1,8 @@
-# Custom categories
+## Custom categories
 
 If folders have the same name prior to the brackets for the emulator they will be merged. So make one for each emulator, then in there make sub folders for the systems that use that emulator (note in the second pic you can still use numbers to order the consoles.
 
-# Emulator Directory Structure
+## Emulator Directory Structure
 
 ```
 Example Systems Used: Gameboy (GB), Gameboy Advanced (MGBA), NES (FC), Sega Genesis (MD)
@@ -38,32 +38,32 @@ SD_CARD
 │  │
 │  ├─ 01)Handheld (GB)/				*Uses (GB) to store systems using the GB emulator
 │  │  ├─ .media/
-│  │  │  ├─ 01)Gameboy.png			*GB system icon  
+│  │  │  ├─ 01)Gameboy.png			*GB system icon
 │  │  │  ├─ bg.png				*Background used when highlighting Handheld in the main menu (only required for first folder in group)
 │  │  │
 │  │  ├─ 01)Gameboy               		*The number here sorts the systems in the Handheld screen
-│  │  │  ├─ .media/      			
-│  │  │  │  ├─ bg.png				*Background for GB that will be shown in the Handheld menu          
+│  │  │  ├─ .media/
+│  │  │  │  ├─ bg.png				*Background for GB that will be shown in the Handheld menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
 │  │  │  ├─ My Awesome Game.gb			*Rom file
 │  │
 │  ├─ 01)Handheld (MGBA)/			*Uses (MGBA) to store systems using the MGBA emulator
 │  │  ├─ .media/
-│  │  │  ├─ 02)Gameboy Advance.png		*GBA system icon  
+│  │  │  ├─ 02)Gameboy Advance.png		*GBA system icon
 │  │  │
 │  │  ├─ 02)Gameboy Advance                	*The number here sorts the systems in the Handheld screen
-│  │  │  ├─ .media/      			
-│  │  │  │  ├─ bg.png				*Background for GBA that will be shown in the Handheld menu          
+│  │  │  ├─ .media/
+│  │  │  │  ├─ bg.png				*Background for GBA that will be shown in the Handheld menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
 │  │  │  ├─ My Awesome Game.gba			*Rom file
 │  │
 │  ├─ 02)Console (FC)/
 │  │  ├─ .media/
-│  │  │  ├─ 01)NES.png				*NES system icon  
+│  │  │  ├─ 01)NES.png				*NES system icon
 │  │  │
 │  │  ├─ 01)NES              			*The number here sorts the systems in the Console screen
-│  │  │  ├─ .media/      			
-│  │  │  │  ├─ bg.png				*Background for NES shown in console menu         
+│  │  │  ├─ .media/
+│  │  │  │  ├─ bg.png				*Background for NES shown in console menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
 │  │  │  ├─ My Awesome Game.nes			*Rom file
 │  │
@@ -73,25 +73,25 @@ SD_CARD
 │  │  │  ├─ 01)Sega Master System.png		*Sega Master system icon shown in Console menu
 │  │  │
 │  │  ├─ 02)Sega Genesis                	*The number here sorts the systems in the Console screen
-│  │  │  ├─ .media/      			
-│  │  │  │  ├─ bg.png				*Background for Sega Genesis shown in Console menu        
+│  │  │  ├─ .media/
+│  │  │  │  ├─ bg.png				*Background for Sega Genesis shown in Console menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
 │  │  │  ├─ My Awesome Game.md			*Rom file
 │  │  │
 │  │  ├─ 03)Sega Master System               	*The number here sorts the systems in the Console screen
-│  │  │  ├─ .media/      			
-│  │  │  │  ├─ bg.png				*Background for Sega Master System shown in Console menu        
+│  │  │  ├─ .media/
+│  │  │  │  ├─ bg.png				*Background for Sega Master System shown in Console menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
 │  │  │  ├─ My Awesome Game.sms			*Rom file
 │  │
-│  ├─ 03)Arcade(FBN)/				
-│  │  ├─ .media/      			
-│  │  │  ├─ bg.png				*Background for FBN that will be shown in the Main menu          
+│  ├─ 03)Arcade(FBN)/
+│  │  ├─ .media/
+│  │  │  ├─ bg.png				*Background for FBN that will be shown in the Main menu
 │  │  │  ├─ My Awesome Game.png      		*Rom boxart
-│  │  ├─ My Awesome Game.zip	
+│  │  ├─ My Awesome Game.zip
 ```
 
-## Notes For merged folders
+### Notes For merged folders
 Folders with the same name (with the exception of the brackets), will be merged. To use this create folders
 with matching names (ex. Handheld, Console, Nintendo, Sega, etc) and in brackets, every emulator you
 will need for the systems you want sorted into here.

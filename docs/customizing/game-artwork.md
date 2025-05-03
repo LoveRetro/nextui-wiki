@@ -1,8 +1,8 @@
-# Game Artwork
+## Game Artwork
 
 NextUI looks for accompanying media for each emulator under `/Roms/[Emulator]/.media` folder.
 
-Create the `.media` folder if it does not exist. 
+Create the `.media` folder if it does not exist.
 
 Put an image in `PNG` format with the exact same name as the ROM file and NextUI will automatically scale the artwork.
 

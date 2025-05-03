@@ -1,4 +1,4 @@
-# Emulator Overlays
+## Emulator Overlays
 
 !!! info "Overlays are only supported by libretro emulators"
     Standalone emulators installed via Paks do not support NextUI overlays.

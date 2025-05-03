@@ -6,6 +6,8 @@
 
 A powerful but understated CFW for TrimUI Brick & Smart Pro. [:simple-github:]({{ urls.github }})
 
+[Installation Instructions](usage.md){ .md-button .md-button--primary }
+
 ---
 
 ## About NextUI

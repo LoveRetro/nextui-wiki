@@ -1,4 +1,4 @@
-# Managing Cheats
+## Managing Cheats
 
 Cheats use RetroArch .cht file format. libretro maintains
 a [database of cheats](https://github.com/libretro/libretro-database/tree/master/cht).

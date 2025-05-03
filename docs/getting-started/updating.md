@@ -1,4 +1,4 @@
-# Updating an Existing Install
+### Updating an Existing Install
 
 !!! warning "Do not unzip `minui.zip`! Copy it to the root of the SD Card as is."
 

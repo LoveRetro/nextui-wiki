@@ -1,8 +1,8 @@
-# Managing Saves
+## Managing Saves
 
 NextUI places all save files by system in `SDCARD_ROOT/Saves`.
 
-## RetroArch .srm Support
+### RetroArch .srm Support
 
 By default, NextUI uses the emulator's default save file format.
 

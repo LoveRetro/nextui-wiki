@@ -1,8 +1,8 @@
-# Adding Emulator Icons
+## Adding Emulator Icons
 
 Create a `.media` directory under the corresponding folder to create icons for Emulators, Collections and Tools.
 
-# Emulator Icon Directory Structure
+### Emulator Icon Directory Structure
 
 ```
 Example System Used: Game Boy Advanced (MGBA)

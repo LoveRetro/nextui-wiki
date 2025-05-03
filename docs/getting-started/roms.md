@@ -1,4 +1,4 @@
-# Adding ROMs
+## Adding ROMs
 
 NextUI creates a `Roms` folder at the SD Card Root containing folders for each console currently
 supported.
@@ -15,7 +15,7 @@ A ROM selected from this combined menu item will launch using the emulator in th
 
 ---
 
-## Disc-based games
+### Disc-based games
 
 To streamline launching multi-file disc-based games, place your BIN / CUE files in a folder
 with the same name as the CUE file.
@@ -68,7 +68,7 @@ NextUI also supports `.chd` files and `.pbp` files under 2GB.
 
 ---
 
-## Collections
+### Collections
 
 A collection is just a text file containing an ordered list of full paths to rom, cue, or m3u files. These text files
 live in the "Collections" folder at the root of your SD card, eg. `SDCARD_ROOT/Collections/Metroid series.txt` might
@@ -87,7 +87,7 @@ of being nested in the 'Collections' folder in the UI.
 
 ---
 
-## Display names
+### Display names
 
 Certain (unsupported arcade) cores require roms to use arcane file names. You can override the display name used
 throughout NextUI by creating a map.txt in the same folder as the files you want to rename. One line per file, `rom.ext`

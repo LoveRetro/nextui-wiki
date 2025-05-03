@@ -38,6 +38,9 @@ theme:
     - content.tooltips
     - navigation.expand
     - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
@@ -63,6 +66,7 @@ extra:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -78,25 +82,9 @@ plugins:
 
 nav:
   - Docs Home: docs.md
-  - Getting Started:
-      - getting-started/index.md
-      - Installation: getting-started/installation.md
-      - Updating: getting-started/updating.md
-      - Adding ROMs: getting-started/roms.md
-      - Required BIOS: getting-started/bios.md
-      - Managing Saves: getting-started/managing-saves.md
-      - Managing Cheats: getting-started/cheats.md
-  - Customizing:
-      - LEDs: customizing/leds.md
-      - Overlays: customizing/theming/overlays.md
-      - Emulator Icons: customizing/theming/emulator-icons.md
-      - Game Artwork: customizing/game-artwork.md
-      - Custom Categories: customizing/custom-categories.md
-  - Paks:
-      - paks/index.md
-      - Community Favorites: paks/community-favorites.md
-      - Standalone Emulators: paks/standalone-emulators.md
-      - Making a Pak: paks/making-a-pak.md
+  - Usage: usage.md
+  - Customizing: customizing.md
+  - Paks: paks.md
   - Shaders:
       - shaders/index.md
   - Support:

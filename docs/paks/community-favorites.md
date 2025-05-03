@@ -1,15 +1,15 @@
-# Community Favorite Paks
+## Community Favorite Paks
 
 This is a non-exhaustive list of Paks beloved by our community.
 
-## The Must Haves
+### The Must Haves
 
 [OTA Updater](https://github.com/LanderN/nextui-updater-pak) a Pak for updating NextUI on-device (aka OTA), Wi-Fi
 connection is required
 
 ---
 
-## Game Management
+### Game Management
 
 [Artwork Scraper](https://github.com/josegonzalez/minui-artwork-scraper-pak) scrapes artwork for your ROMs
 
@@ -31,7 +31,7 @@ using the function keys
 
 ---
 
-## File Management
+### File Management
 
 [Cloud Backups](https://github.com/ben16w/minui-cloud-backups) a Pak to back up saves, screenshots
 and other folders to cloud storage providers like Google Drive and Dropbox
@@ -52,18 +52,18 @@ against a remote Syncthing server
 
 ---
 
-## Theming
+### Theming
 [NextUI-Themes](https://github.com/Leviathanium/NextUI-Themes) for all theming needs, with Import/Export functionality and predefined themes
 
 ---
 
-## Miscellaneous
+### Miscellaneous
 
 [Simple Mode](https://github.com/josegonzalez/minui-simple-mode-pak/): a Pak for managing simple mode
 
 ---
 
-## Developer Tools
+### Developer Tools
 
 [Developer](https://github.com/josegonzalez/minui-developer-pak) keeps the device on while accessing via adb/ssh
 

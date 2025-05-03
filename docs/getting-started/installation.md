@@ -1,4 +1,4 @@
-# Installation Instructions
+### Installation Instructions
 
 !!! warning "Formatting will erase all data from the SD Card. If there is anything important on the card please back it up."
 !!! warning "Do not unzip `MinUI.zip`! Copy it to the root of the SD Card as is."

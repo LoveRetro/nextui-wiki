@@ -1,4 +1,4 @@
-# Standalone Emulator Paks
+## Standalone Emulator Paks
 
 !!! info "A quick note about standalone emulators!"
     Standalone emulators do not support overlays and are not as tightly integrated into NextUI.
@@ -10,7 +10,7 @@
 - [PSP](https://github.com/ben16w/minui-psp) - **supports Deep Sleep!**
 - [Portmaster](https://github.com/ben16w/minui-portmaster) - **no TrimUI_Ex required!!**
 
-# Installing Standalone Emulators
+### Installing Standalone Emulators
 
 1. Download the zip file from the releases section of the above GitHub Repositories.
 2. Unzip the release.

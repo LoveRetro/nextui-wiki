@@ -1,16 +1,16 @@
-# LED Controls
+## LED Controls
 
 !!! info "Device Support"
 
     NextUI's LED Controls currently only support the TrimUI Brick.
-        
+
     Support for the TrimUI Smart Pro will be addressed in a future update.
 
 !!! info "A comment on color reproduction"
 
     The TrimUI Brick is a budget device with budget LEDs. Don't expect the colors to display accurately.
 
-## LED Control App
+### LED Control App
 
 On home screen, select `Tools`, then select `LedControl`.
 
@@ -18,7 +18,7 @@ The app provides the following options.
 
 ---
 
-### LED Selection
+#### LED Selection
 
 The TrimUI Brick has the following configurable LEDs.
 
@@ -30,7 +30,7 @@ When in the LED Control App you can use `Left Trigger` and `Right Trigger` to cy
 
 ---
 
-### Effects
+#### Effects
 
 Each LED can be configured with the following effects.
 
@@ -45,25 +45,25 @@ Each LED can be configured with the following effects.
 
 ---
 
-### Color
+#### Color
 
 The color of LEDs. Use `Left` and `Right` on the `D-Pad` to cycle through the colors.
 
 ---
 
-### Speed
+#### Speed
 
 The speed of breathing effect in milliseconds.
 
 ---
 
-### Brightness
+#### Brightness
 
 The brightness level of the LEDs. Setting this to `0` will turn the LED off.
 
 ---
 
-### Info Brightness
+#### Info Brightness
 
 The brightness of LED when informing you about something.
 
@@ -76,7 +76,7 @@ Setting brightness to `0` will turn the LED off.
 
 ---
 
-### Ambient Mode
+#### Ambient Mode
 
 !!! info "Only Supported By Certain Emulator Cores"
 

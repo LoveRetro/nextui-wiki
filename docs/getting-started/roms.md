@@ -23,9 +23,9 @@ with the same name as the CUE file.
 NextUI will automatically launch the CUE file instead of navigating into the folder when selected.
 
 ```
-  Tony Hawk's Pro Skater 2 (USA)/
-      Tony Hawk's Pro Skater 2 (USA).bin
-      Tony Hawk's Pro Skater 2 (USA).cue
+Tony Hawk's Pro Skater 2 (USA)/
+  Tony Hawk's Pro Skater 2 (USA).bin
+  Tony Hawk's Pro Skater 2 (USA).cue
 ```
 
 For multi-disc games, follow these steps.
@@ -40,22 +40,22 @@ NextUI will automatically launch the CUE file instead of navigating into the fol
 For example, Final Fantasy VII has three discs:
 
 ```
-  Final Fantasy VII (USA)/
-    Final Fantasy VII (USA).m3u
-    Final Fantasy VII (USA) (Disc 1).bin
-    Final Fantasy VII (USA) (Disc 1).cue
-    Final Fantasy VII (USA) (Disc 2).bin
-    Final Fantasy VII (USA) (Disc 2).cue
-    Final Fantasy VII (USA) (Disc 3).bin
-    Final Fantasy VII (USA) (Disc 3).cue
+Final Fantasy VII (USA)/
+  Final Fantasy VII (USA).m3u
+  Final Fantasy VII (USA) (Disc 1).bin
+  Final Fantasy VII (USA) (Disc 1).cue
+  Final Fantasy VII (USA) (Disc 2).bin
+  Final Fantasy VII (USA) (Disc 2).cue
+  Final Fantasy VII (USA) (Disc 3).bin
+  Final Fantasy VII (USA) (Disc 3).cue
 ```
 
 The `.m3u` file for FF7 would contain:
 
 ```
-  Final Fantasy VII (USA) (Disc 1).cue
-  Final Fantasy VII (USA) (Disc 2).cue
-  Final Fantasy VII (USA) (Disc 3).cue
+Final Fantasy VII (USA) (Disc 1).cue
+Final Fantasy VII (USA) (Disc 2).cue
+Final Fantasy VII (USA) (Disc 3).cue
 ```
 
 When you are playing a multi-disc game the NextUI In Game Menu will display the current disc.
@@ -76,10 +76,10 @@ look like
 this:
 
 ```
-  /Roms/GBA/Metroid Zero Mission.gba
-  /Roms/GB/Metroid II.gb
-  /Roms/SNES (SFC)/Super Metroid.sfc
-  /Roms/GBA/Metroid Fusion.gba
+/Roms/GBA/Metroid Zero Mission.gba
+/Roms/GB/Metroid II.gb
+/Roms/SNES (SFC)/Super Metroid.sfc
+/Roms/GBA/Metroid Fusion.gba
 ```
 
 If you disable all visible folders under 'Roms', the 'Collections' folders contents will populate the main menu instead
@@ -95,9 +95,9 @@ followed by a single tab followed by `Display Name`. You can hide a file by addi
 name. eg. The 'Collections' folder needs its own map.txt file as well.
 
 ```
-  neogeo.zip	.Neo Geo Bios
-  mslug.zip	Metal Slug
-  sf2.zip	Street Fighter II
+neogeo.zip  .Neo Geo Bios
+mslug.zip   Metal Slug
+sf2.zip	    Street Fighter II
 ```
 
 ---

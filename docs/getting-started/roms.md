@@ -104,8 +104,8 @@ sf2.zip	    Street Fighter II
 
 ### Doom PWADs
 
-NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/). PrBoom supports customized wad
-add-ons - PWADs - and the recommendation for usage with NextUI is to use an m3u file to reference the pwad.
+NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/). PrBoom supports customized WAD
+add-ons - PWADs - and the recommendation for usage with NextUI is to use an m3u file to reference the PWAD.
 
 ```
 /Roms/Doom (PRBOOM)/Mod Name/
@@ -119,7 +119,7 @@ The `.m3u` file for `Mod Name` would contain:
 Mod Name.wad
 ```
 
-By default, PrBoom loads the base WADs - IWADs - from the Bios director is a specific order, causing issues if all the IWADs
+By default, PrBoom loads the base WADs - IWADs - from the Bios directory in a specific order, causing issues if all the IWADs
 are placed in the root of the `/Bios/PRBOOM` folder. To ensure the correct IWAD is loaded, NextUI supports creating a `doom.version`
 file in the folder containing the m3u.
 

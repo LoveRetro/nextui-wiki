@@ -111,7 +111,7 @@ sf2.zip	    Street Fighter II
     It can be placed in `/Bios/PRBOOM`.
 
 NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/), and loads Doom PWAD - or
-patch wad - files as it's game format. It also uses IWADs (internal Doom WADs) as the Bios files.
+patch wad - files as it's game format. It also uses IWADs (internal Doom Wads from commercial copies of Doom) as Bios files.
 
 !!! note
 
@@ -125,7 +125,8 @@ To setup a PWAD, place it in the `/Roms/Doom (PRBOOM)` folder on your SD Card.
 ```
 
 PWADs all depend on a particular IWAD as the base for running the PWAD. IWADs are placed in the `/Bios/PRBOOM` folder,
-and a list of them is available in the [Required BIOS](#required-bios) section. If all your PWADs use the same IWAD - for instance,
+and a list of them is available in the [Required BIOS](#required-bios) section. IWAD files for commercial versions of Doom
+can be retrieved from those installations. If all your PWADs use the same IWAD - for instance,
 `doom1.wad` then the IWAD can be placed directly in the `/Bios/PRBOOM` folder, and PrBoom will load the PWADs as expected.
 
 ```

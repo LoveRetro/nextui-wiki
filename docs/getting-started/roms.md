@@ -111,7 +111,7 @@ sf2.zip	    Street Fighter II
     It can be placed in `/Bios/PRBOOM`.
 
 NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/), and loads Doom PWAD - or
-patch wad - files as it's game format. It also uses IWADs (internal Doom Wads from commercial copies of Doom) as Bios files.
+patch wad - files as it's game format. It also uses IWADs (internal Doom WADs) as the Bios files.
 
 !!! note
 
@@ -125,8 +125,7 @@ To setup a PWAD, place it in the `/Roms/Doom (PRBOOM)` folder on your SD Card.
 ```
 
 PWADs all depend on a particular IWAD as the base for running the PWAD. IWADs are placed in the `/Bios/PRBOOM` folder,
-and a list of them is available in the [Required BIOS](#required-bios) section. IWAD files for commercial versions of Doom
-can be retrieved from those installations. If all your PWADs use the same IWAD - for instance,
+and a list of them is available in the [Required BIOS](#required-bios) section. If all your PWADs use the same IWAD - for instance,
 `doom1.wad` then the IWAD can be placed directly in the `/Bios/PRBOOM` folder, and PrBoom will load the PWADs as expected.
 
 ```
@@ -140,8 +139,8 @@ can be retrieved from those installations. If all your PWADs use the same IWAD -
 In many cases, you will want to load specific PWADs with specific IWADs. Due to how PrBoom detects IWADs and lacking
 information about which IWAD is required by a PWAD, PrBoom may load the incorrect IWAD for your PWAD. To combat this,
 NextUI supports using a `doom.version` file to specify the correct `/Bios/PRBOOM` subdirectory to reference. Omitting
-a `doom.version` file will result in the default PrBoom using the default IWAD detection algorithm. It is recommended
-to use a `doom.version` file in conjuction with the `m3u` file format commonly used for [Disc-based games](#disc-based-games)
+a `doom.version` text file will result in the default PrBoom using the default IWAD detection algorithm. It is recommended
+to use a `doom.version` text file in conjuction with the `m3u` text file format commonly used for [Disc-based games](#disc-based-games)
 to tie PWADs to have a clean directory structure.
 
 Using `NextUI Doom.wad` as an example, we would have the following directory structure in our Roms folder:
@@ -152,19 +151,19 @@ Using `NextUI Doom.wad` as an example, we would have the following directory str
 /Roms/Doom (PRBOOM)/NextUI Doom/doom.version
 ```
 
-The `NextUI Doom.m3u` would contain:
+The contents of the newly created `NextUI Doom.m3u` text would contain:
 
 ```
 NextUI Doom.wad
 ```
 
-While the `doom.version` file would contain the following:
+While the newly created `doom.version` text file would contain the following:
 
 ```
 doom1
 ```
 
-The `doom.version` file maps to a subfolder in the `/Bios/PRBOOM` folder that should be used to load dependencies, such as
+The `doom.version` text file maps to a subfolder in the `/Bios/PRBOOM` folder that should be used to load dependencies, such as
 the IWAD or custom mp3 files. In the case of Doom 1 (Commercial), the commercial IWAD would be placed on the disk like so:
 
 ```
@@ -188,13 +187,13 @@ To load our `NextUI Doom 2.wad` megawad with only the title music changing, the 
 /Bios/PRBOOM/doom2/dm2ttl.mp3
 ```
 
-The contents of `NextUI Doom 2.m3u` would be:
+The contents of `NextUI Doom 2.m3u` text file would be:
 
 ```
 NextUI Doom 2.wad
 ```
 
-And the `doom.version` file would have the following as it's contents:
+And the `doom.version` text file would have the following as it's contents:
 
 ```
 doom2

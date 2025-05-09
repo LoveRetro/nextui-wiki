@@ -131,7 +131,7 @@ file in the folder containing the m3u.
 ```
 
 The `doom.version` file maps to a subfolder in the `/Bios/PRBOOM` folder that should be used to load dependencies, such as
-the IWAD or custom mp3 files. For instance, if the PWAD requires `Doom` (commercial) and the `doom.wad` is in `/Bios/PRBOOM/doom2`, then
+the IWAD or custom mp3 files. For instance, if the PWAD requires `Doom` (commercial) and the `doom.wad` is in `/Bios/PRBOOM/doom1`, then
 the contents of the `doom.version` file would be:
 
 ```

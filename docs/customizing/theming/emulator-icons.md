@@ -5,7 +5,7 @@ Create a `.media` directory under the corresponding folder to create icons for E
 ### Emulator Icon Directory Structure
 
 ```
-Example System Used: Game Boy Advanced (MGBA)
+Example System Used: Game Boy Advance (MGBA)
 Example Rom Used:    My Awesome Game.gba
 Example Pak Used:    Artwork Scraper.pak
 
@@ -32,8 +32,8 @@ SD_CARD
 │  │  ├─ bg.png                                *Recently Played List Menu Background
 ├─ Roms/
 │  ├─ .media/
-│  │  ├─ Game Boy Advanced (MGBA).png          *Main Menu Console Icon
-│  ├─ Game Boy Advanced (MGBA)/
+│  │  ├─ Game Boy Advance (MGBA).png          *Main Menu Console Icon
+│  ├─ Game Boy Advance (MGBA)/
 │  │  ├─ .media/
 │  │  │  ├─ bg.png                             *MGBA Rom List Background
 │  │  │  ├─ My Awesome Game.png                *Box Art / In-game Preview

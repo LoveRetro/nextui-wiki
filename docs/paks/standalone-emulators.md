@@ -7,13 +7,13 @@
 - [Nintendo DS](https://github.com/josegonzalez/minui-nintendo-ds-pak)
 - [Nintendo 64](https://github.com/josegonzalez/minui-n64-pak)
 - [Pico-8](https://github.com/josegonzalez/minui-pico-8-pak)
-- [PSP](https://github.com/ben16w/minui-psp) - **supports Deep Sleep!**
-- [Portmaster](https://github.com/ben16w/minui-portmaster) - **no TrimUI_Ex required!!**
+- [PSP](https://github.com/ben16w/minui-psp)—**supports Deep Sleep!**
+- [Portmaster](https://github.com/ben16w/minui-portmaster)—**no TrimUI_Ex required!!**
 
 ### Installing Standalone Emulators
 
-1. Download the zip file from the releases section of the above GitHub Repositories.
+1. Download the zip file from the releases section of the above GitHub repositories.
 2. Unzip the release.
-3. Create a folder named `Emu` at the root of your SD Card if it does not already exist.
+3. Create a folder named `Emu` at the root of your SD card if it does not already exist.
 4. Copy the unzipped Pak to this `Emu` directory.
 5. Follow any additional steps outlined in the respective repository.

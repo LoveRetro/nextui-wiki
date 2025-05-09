@@ -29,19 +29,19 @@ It features a rebuilt emulation engine and tons of added features outlined below
 <small>Note: For other devices we recommend checking out [MinUI](https://github.com/shauninman/MinUI).</small>
 
 - Fixed both screen tearing and sync stutter problems of MinUI by rebuilding the emulator engine core
-- Game switcher menu (Onion OS style) by [@frysee](https://github.com/frysee)
+- Game switcher menu (OnionOS style) by [@frysee](https://github.com/frysee)
 - High quality audio, due to advanced resampling engine
   using [libsamplerate](https://github.com/libsndfile/libsamplerate) (with quality/performance setting per emulator)
 - Much lower latency (average 20ms, 1 frame of 60fps)
 - Shaders!
 - Fully OpenGL/GPU based for faster performance!
-- native WiFi support
+- Native WiFi support
 - Game art/media support
 - Game time tracker!
 - Cheats support
 - Overlays support!
-- Broader zip file support (bz2, LZMA)
-- Dynamic cpu speed scaling (keeps your device cool and extends battery life, but gives the performance right when
+- Broader zip file support (BZ2, LZMA)
+- Dynamic CPU speed scaling (keeps your device cool and extends battery life, but gives the performance right when
   needed)
 - Custom bootlogos contributed by [@SolvalouArt](https://bsky.app/profile/solvalouart.bsky.social)
 - Color and font settings to customize the NextUI interface
@@ -49,20 +49,20 @@ It features a rebuilt emulation engine and tons of added features outlined below
 - LED control, change colors, effects, brightness
 - LED indicators, low battery, stand by, charging (brightness can be set seperately)
 - Haptic feedback in the menu by [@ExonakiDev](https://github.com/exonakidev)
-- Ambient LED mode, the LEDS act like Ambient light TV's for extra immersion, configurable per emulator
+- Ambient LED mode—the LEDS act like ambient light TVs for extra immersion. Configurable per emulator
 - Display controls (color temperature, brightness, contrast, saturation, exposure)
-- Configurable FN/Mute switch that can trigger a "night mode" - toggle between two sets of custom display settings!
+- Configurable FN/Mute switch that can trigger a "night mode"—toggle between two sets of custom display settings!
 - Support for automatic NTP time synchronization with timezones and realtime clock (RTC)
 - Deep Sleep mode, gives instant ON and avoids the overheat bug on the Brick
   by [@zhaofengli](https://github.com/zhaofengli)
 - Customizable screen and sleep timeout (Including "Never")
-- Battery Monitoring including history graph and time left prediction
+- Battery monitoring, including history graph and time left prediction
 - Scrolling animated titles for longer game names
 - Updated and optimized build emulation cores
 - Rumble strength fixed and is now variable as used by the games
-- FBNeo Arcade screen rotation
-- PAL Mode
-- Next font supports CJK for JP/CN etc rom names
+- FBNeo arcade screen rotation
+- PAL mode
+- Next font supports CJK for JP/CN/etc. ROM names
 - Lot of other smaller fixes and optimizations
 
 ---

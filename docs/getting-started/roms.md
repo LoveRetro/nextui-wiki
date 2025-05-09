@@ -32,8 +32,8 @@ For multi-disc games, follow these steps.
 
 1. Create a folder for your disc files.
 2. Put all the disc files into this folder.
-3. Then create a `.m3u` file that matches the name of the folder created in step one.
-4. Edit the `.m3u` file by adding the relative path to each disc's cue file, one file per line.
+3. Create a `.m3u` file that matches the name of the folder created in step one.
+4. Edit the `.m3u` file and add the relative path to each disc's .cue file, one file per line.
 
 NextUI will automatically launch the CUE file instead of navigating into the folder when selected.
 
@@ -58,7 +58,7 @@ Final Fantasy VII (USA) (Disc 2).cue
 Final Fantasy VII (USA) (Disc 3).cue
 ```
 
-When you are playing a multi-disc game the NextUI In Game Menu will display the current disc.
+When you are playing a multi-disc game, the NextUI in-game Menu will display the current disc.
 
 Use `left` or `right` on the D-Pad to change discs.
 
@@ -104,8 +104,8 @@ sf2.zip	    Street Fighter II
 
 ### Doom PWADs
 
-NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/). PrBoom supports customized wad
-add-ons - PWADs - and the recommendation for usage with NextUI is to use an m3u file to reference the pwad.
+NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/). PrBoom supports customized WAD
+add-ons - PWADs - and the recommendation for usage with NextUI is to use an m3u file to reference the PWAD.
 
 ```
 /Roms/Doom (PRBOOM)/Mod Name/
@@ -119,7 +119,7 @@ The `.m3u` file for `Mod Name` would contain:
 Mod Name.wad
 ```
 
-By default, PrBoom loads the base WADs - IWADs - from the Bios director is a specific order, causing issues if all the IWADs
+By default, PrBoom loads the base WADs - IWADs - from the Bios directory in a specific order, causing issues if all the IWADs
 are placed in the root of the `/Bios/PRBOOM` folder. To ensure the correct IWAD is loaded, NextUI supports creating a `doom.version`
 file in the folder containing the m3u.
 

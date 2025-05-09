@@ -6,15 +6,15 @@ In today's world, most of us have screens with resolutions of at least 1920×108
 
 While we enjoy our collections of retro games today, there's one big problem: our modern screens usually have resolutions far beyond what these games were originally designed for. In practice, this means we either play our games in a tiny square in the middle of our screens to preserve their original resolution, or (what most of us prefer) we scale the image up to better fit our modern, high-resolution displays.
 
-There are really three main scaling modes you can choose from in the frontend options under Screen Scaling:
+There are three main scaling modes you can choose from in the frontend options under Screen Scaling:
 
-- Native – This keeps the game at its original resolution, resulting in that tiny box in the center of your screen.  
-- Aspect – This scales the image to your screen while maintaining the original aspect ratio, so nothing looks distorted (no "fat" Super Mario). It scales the image up until either the width or height reaches the screen size. This often leaves empty space on the sides or top and bottom, unless you're lucky enough to have a screen that matches the original aspect ratio exactly.  
-- Full Screen Stretch – This simply stretches the image to fill the entire screen without preserving the aspect ratio. While it fills the screen nicely, it can make things look strange if the original and screen aspect ratios don't match.  
+- Native—This keeps the game at its original resolution, resulting in that tiny box in the center of your screen.  
+- Aspect—This scales the image to your screen while maintaining the original aspect ratio, so nothing looks distorted (no "fat" Super Mario). It scales the image up until either the width or height reaches the screen size. This often leaves empty space on the sides or top and bottom, unless you're lucky enough to have a screen that matches the original aspect ratio exactly.  
+- Full Screen Stretch—This simply stretches the image to fill the entire screen without preserving the aspect ratio. While it fills the screen nicely, it can make things look strange if the original and screen aspect ratios don't match.  
 
 Ultimately, the choice is yours based on what you prefer. However, understanding screen scaling is important because it plays a big role in how shaders are used — although scaling isn't the only reason shaders are popular, it is a major one.
 
-## Lets get shady!
+## Lets Get Shady!
 
 **Options → Frontend → Screen Sharpness**
 
@@ -79,13 +79,14 @@ First, double (or triple) the sharp pixels with NEAREST, then let LINEAR smooth 
 Best of both worlds!
 
 Example:
+
 - Emulator outputs 320×240.  
-- First, upscale to 640×480 using NEAREST. (Or even 960×720 if you want.)
+- First, upscale to 640×480 using NEAREST (or even 960×720 if you want).
 - Then, apply LINEAR interpolation when stretching it the rest of the way to your screen’s full resolution.
 
 **Result?**  
 It looks *way* better!  
-Because LINEAR now only has to invent half as many pixels as it’s working with a bigger starting point.
+This is because LINEAR now only has to invent half as many pixels as it’s working with a bigger starting point.
 
 ![LINEAR with 2x NEAREST prescale](https://github.com/user-attachments/assets/a4c9b575-d010-493b-93c8-d1dd7b666b79)
 
@@ -104,8 +105,7 @@ And set the following:
 - **Filter:** NEAREST (very important — we want a sharp, clean NEAREST upscale first!)  
 - **Source type:** Relative or Source (doesn’t matter — they’re the same for the first shader)  
 - **Texture type:** Relative or Source  
-- **Scale:** 2 or 3  
-  (Use 2× for SNES, MD, etc., or 3× for very small images like GB/GBC.)
+- **Scale:** 2 or 3  (Use 2× for SNES, MD, etc., or 3× for very small images like GB/GBC.)
 
 ---
 
@@ -124,12 +124,13 @@ And set this to **LINEAR**.
 ---
 
 **So now:**
+
 - First, the shader upscales the image 2× or 3× sharply with NEAREST.
 - Then, the frontend upscales the rest of the way using LINEAR to smooth it out slightly.
 
 **And the result already looks MUCH better, right?**
 
-First one is without shaders just straight NEAREST upscaling to fullscreen, second one is using above settings making things a little more smoother and nicer, this looks really good on the Brick's high dpi screen.
+The first image below is without shaders, just straight NEAREST upscaling to fullscreen. The second one uses the above settings to make things a little  smoother and nicer. This looks really good on the Brick's high DPI screen.
 ![Super Mario World 2025-04-26-16-27-31](https://github.com/user-attachments/assets/7e3f42b3-e73f-4bf0-b8c2-6b9c98be56fb)
 ![Super Mario World 2025-04-26-16-27-21](https://github.com/user-attachments/assets/fd6907b0-ee21-46d6-a07d-b51c33bd9b01)
 
@@ -144,9 +145,10 @@ First one is without shaders just straight NEAREST upscaling to fullscreen, seco
 The "world of shaders" is all about **chaining small steps together** — each shader alters the image slightly before passing it along.
 
 - **Choosing NEAREST or LINEAR only matters when the step involves resizing.**  
-If a shader step uses a Scale of 1 (no scaling), the NEAREST or LINEAR setting has no effect at all. The same goes for the screen sharpness setting in frontend options. If an image already is at screen size before it reaches this final step then the  final filter does nothing because it doesn't have to up or downscale anymore. NEAREST and LINEAR only apply when the image has to resize either up or down. Its not a filter applying to the image, it just tells the GPU what method to use when up (or down) scaling an image. 
+If a shader step uses a Scale of 1 (no scaling), the NEAREST or LINEAR setting has no effect at all. The same goes for the screen sharpness setting in frontend options. If an image already is at screen size before it reaches this final step then the  final filter does nothing because it doesn't have to up or downscale anymore. NEAREST and LINEAR only apply when the image has to resize either up or down. It's not a filter applying to the image, it just tells the GPU what method to use when up (or down) scaling an image. 
 
-But like I said shaders are not only used for scaling, since they are just little programs that run on your GPU they can do anything. There are tons of shaders out there (`.glsl` files) that do all kinds of fun things:  
+But like I said shaders are not only used for scaling, since they are just little programs that run on your GPU they can do anything. There are tons of shaders out there (`.glsl` files) that do all kinds of fun things:
+
 - Simulate CRT screens  
 - Mimic Game Boy Advance LCD looks  
 - Apply different smoothing/sharpening algorithms  
@@ -154,7 +156,7 @@ But like I said shaders are not only used for scaling, since they are just littl
 - Distort the screen or enhance colors, etc.  
 
 **Feel free to experiment!**  
-Try different shaders, different combinations, and find the look that feels best for your games. You can download any glsl file and place it in the `/Shaders` folder on your SDCard to use it within NextUI. But remember it has to be the glsl file which is the actual shader program, we currently do not yet support the glsp shader preset files. But these are simple text files and you can open them to view the settings and replicate them in the shaders menu. 
+Try different shaders, different combinations, and find the look that feels best for your games. You can download any .glsl file and place it in the `/Shaders` folder on your SD card to use it within NextUI. NextUI does not yet support .glsp shader preset files, though these are simple text files and you can open them to view the settings and replicate them in the shaders menu. 
 
 **Enjoy! 🎮**
 
@@ -189,7 +191,7 @@ Here's the idea:
 
 - Setting **Source** as the **Source/Texture Types** tells the shader to use the original dimensions from the emulator output — the real, original pixel layout. However, for the actual pixel data, it still uses the output from the previous shader step.  
 - While we're at it: **Relative** means "use the dimensions of the previous shader step," and **Screen** means "use the dimensions of the screen" (with aspect ratio correction applied).
-- Setting the **Scale** to **Screen** means the shader will output an image with a grid drawn over it (where the grid itself is based on the original pixel size) at the screen’s resolution. The upscaling happens here, and no further upscaling is needed afterwards since the output is already at the correct size by this shader by setting it to screen.
+- Setting the **Scale** to **Screen** means the shader will output an image with a grid drawn over it (where the grid itself is based on the original pixel size) at the screen’s resolution. The upscaling happens here, and no further upscaling is needed.
 
 So, the `lcd3x` shader creates a grid based on the original pixel size but with an output size that covers the entire screen.  
 You end up with an LCD-style grid that perfectly matches the original pixel layout, giving each pixel a distinct look — while in reality, the image is being upscaled to your screen’s full resolution.  

@@ -1,6 +1,6 @@
 ## LED Controls
 
-!!! info "Device Support"
+!!! info "Device support"
 
     NextUI's LED Controls currently only support the TrimUI Brick.
 
@@ -22,7 +22,7 @@ The app provides the following options.
 
 The TrimUI Brick has the following configurable LEDs.
 
-- Two LEDs on the front of the device for each function button (FN1 & FN2)
+- Two LEDs on the front of the device for each function button (F1 & F2)
 - Two LEDs under the triggers (one under L1 & L2 the other under R1 & R2)
 - One LED bar on the top of the device
 
@@ -78,19 +78,19 @@ Setting brightness to `0` will turn the LED off.
 
 #### Ambient Mode
 
-!!! info "Only Supported By Certain Emulator Cores"
+!!! info "Only supported By certain emulator cores"
 
     Ambient light effects are only supported by the built in Libretro cores.
 
-Ambient light mode makes your LEDs change color to match the dominate color on screen during gameplay.
+Ambient light mode makes your LEDs change color to match the dominant color on screen during gameplay.
 
 To enable ambient mode (in a supported emulator) follow these steps:
 
-1. While in game press the `Menu` button
+1. While in game, press the `Menu` button
 2. Select `Options`
 3. Select `Frontend`
 4. Scroll down to the Ambient Mode line and turn it on. You can select to use all LEDs or just a specific one.
 
-!!! info "Ambient Mode sets the LED Brightness to Maximum"
+!!! info "Ambient mode sets the LED Brightness to Maximum"
 
-    We found that lower brightness levels will result in displaying in incorrect color.
+    We found that lower brightness levels will result in displaying an incorrect color.

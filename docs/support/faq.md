@@ -1,15 +1,15 @@
 # Frequently Asked Questions
 
-Here are the answers to questions that come up a ton. If you have a question that isn't answered here hit up
+Here are the answers to questions that come up often. If you have a question that isn't answered here, hit up
 the [Discord :simple-discord: ]({{ urls.discord }}).
 
-## Where can I download NextUI?
+## Where Can I Download NextUI?
 
-You can always find the latest NextUI release on our [GitHub Repo]({{ urls.github }}).
+You can always find the latest NextUI release on our [GitHub repo]({{ urls.github }}).
 
 ---
 
-## How do I install / update?
+## How Do I Install / Update?
 
 For a fresh install of NextUI, follow our [installation guide](../usage.md#installation-instructions).
 
@@ -17,7 +17,7 @@ Already a NextUI user? Follow our [updating guide](../usage.md#updating-an-exist
 
 ---
 
-## What systems are supported?
+## What Systems are Supported?
 
 ### Included in the Base CFW
 
@@ -29,7 +29,7 @@ Already a NextUI user? Follow our [updating guide](../usage.md#updating-an-exist
 * Sega Genesis
 * PlayStation
 
-### Available from a Third Party
+### Available From a Third Party
 
 * Neo Geo Pocket(and Color)
 * Pico-8
@@ -43,8 +43,8 @@ Already a NextUI user? Follow our [updating guide](../usage.md#updating-an-exist
 
 ---
 
-## Why am I only seeing Tools?
+## Why Am I Only Seeing Tools?
 
-Ensure that you have a `Roms` folder at the root of your SD Card with at least one ROM file.
+Ensure that you have a `Roms` folder at the root of your SD card with at least one ROM file.
 
-For more info visit the [add roms](../usage.md#adding-roms) page.
+For more info, visit the [Adding ROMs](../usage.md#adding-roms) page.

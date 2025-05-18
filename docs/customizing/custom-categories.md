@@ -1,11 +1,11 @@
-## Custom categories
+## Custom Categories
 
-If folders have the same name prior to the brackets for the emulator they will be merged. So make one for each emulator, then in there make sub folders for the systems that use that emulator (note in the second pic you can still use numbers to order the consoles.
+If folders have the same name prior to the brackets for the emulator, they will be merged. So make one for each emulator, then create subfolders for the systems that use that emulator (note in the second pic you can still use numbers to order the consoles.
 
 ## Emulator Directory Structure
 
 ```
-Example Systems Used: Gameboy (GB), Gameboy Advanced (MGBA), NES (FC), Sega Genesis (MD)
+Example Systems Used: Game Boy (GB), Game Boy Advance (MGBA), NES (FC), Sega Genesis (MD)
 Example Rom Used:    My Awesome Game.ext
 Example Pak Used:    Artwork Scraper.pak
 
@@ -38,10 +38,10 @@ SD_CARD
 │  │
 │  ├─ 01)Handheld (GB)/				*Uses (GB) to store systems using the GB emulator
 │  │  ├─ .media/
-│  │  │  ├─ 01)Gameboy.png			*GB system icon
+│  │  │  ├─ 01)Game Boy.png			*GB system icon
 │  │  │  ├─ bg.png				*Background used when highlighting Handheld in the main menu (only required for first folder in group)
 │  │  │
-│  │  ├─ 01)Gameboy               		*The number here sorts the systems in the Handheld screen
+│  │  ├─ 01)Game Boy               		*The number here sorts the systems in the Handheld screen
 │  │  │  ├─ .media/
 │  │  │  │  ├─ bg.png				*Background for GB that will be shown in the Handheld menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
@@ -49,9 +49,9 @@ SD_CARD
 │  │
 │  ├─ 01)Handheld (MGBA)/			*Uses (MGBA) to store systems using the MGBA emulator
 │  │  ├─ .media/
-│  │  │  ├─ 02)Gameboy Advance.png		*GBA system icon
+│  │  │  ├─ 02)Game Boy Advance.png		*GBA system icon
 │  │  │
-│  │  ├─ 02)Gameboy Advance                	*The number here sorts the systems in the Handheld screen
+│  │  ├─ 02)Game Boy Advance                	*The number here sorts the systems in the Handheld screen
 │  │  │  ├─ .media/
 │  │  │  │  ├─ bg.png				*Background for GBA that will be shown in the Handheld menu
 │  │  │  │  ├─ My Awesome Game.png      	*Rom boxart
@@ -91,20 +91,20 @@ SD_CARD
 │  │  ├─ My Awesome Game.zip
 ```
 
-### Notes For merged folders
-Folders with the same name (with the exception of the brackets), will be merged. To use this create folders
-with matching names (ex. Handheld, Console, Nintendo, Sega, etc) and in brackets, every emulator you
+### Notes for Merged Folders
+Folders with the same name (with the exception of the brackets) will be merged. To use this functionality, create folders
+with matching names (ex. Handheld, Console, Nintendo, Sega, etc.) and in brackets, every emulator you
 will need for the systems you want sorted into here.
 
 Think of the folders in 3 tiers
 SD/Roms/CategoryName(emulator)/Gamesystem/Games
 
 In tier 2, Create folders for each system that uses the emulator listed in its parent folder
-ex. for Console (MD), MD can emulate Sega Genesis, Sega 32x, Sega CD & Sega Master System, so all those system folders should be placed in Console(MD)
+ex. for Console (MD), MD can emulate Sega Genesis, Sega 32x, Sega CD & Sega Master System, so all those system folders should be placed in Console (MD)
 
-In tier 3, place all game files, additionally at this point sub folders can be easily made for subcategories like rom hacks, translations, etc.
+In tier 3, place all game files. Additionally at this point subfolders can be easily made for subcategories like rom hacks, translations, etc.
 
-Icons and background for the merged folders only need to be made for the first folder alphabetically, above it the icon for Gameboy was titled 01)Handheld (GB).png
+Icons and background for the merged folders only need to be made for the first folder alphabetically. In the example directory structure above, the icon for Game Boy was titled 01)Handheld (GB).png
 and the background was placed in Roms/01)Handheld (GB)/.media/bg.png
 
 ```
@@ -112,7 +112,7 @@ and the background was placed in Roms/01)Handheld (GB)/.media/bg.png
 │  ├─ screenshot.png                           *Screenshot Monitor Pak PNG Output Location
 ├─ Tools/
 │  ├─ .media/
-│  │  ├─ tg5040.png                            *Tools list Icon in Main Menu
+│  │  ├─ tg5040.png                            *Tools List Icon in Main Menu
 │  ├─ tg5040/
 │  │  ├─ .media/
 │  │  │  ├─ bg.png                             *Tools List Main Menu Background

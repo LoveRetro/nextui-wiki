@@ -104,51 +104,99 @@ sf2.zip	    Street Fighter II
 
 ### Doom PWADs
 
-NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/). PrBoom supports customized WAD
-add-ons - PWADs - and the recommendation for usage with NextUI is to use an m3u file to reference the PWAD.
+!!! warning
+
+    The PrBoom core _requires_ the `prboom.wad` IWAD file - which is treated as a Bios file - and that file is available
+    for download [here](https://github.com/libretro/libretro-prboom/blob/master/prboom.wad).
+    It can be placed in `/Bios/PRBOOM`.
+
+NextUI supports Doom via the [PrBoom Libretro Core](https://docs.libretro.com/library/prboom/), and loads Doom PWAD - or
+patch wad - files as it's game format. It also uses IWADs (internal Doom WADs) as the Bios files.
+
+!!! note
+
+    The following documentation will use the fictional `NextUI Doom.wad` (Doom 1) and `NextUI Doom 2.wad` (`Doom 2)
+    as the PWADs Megawads being loaded.
+
+To setup a PWAD, place it in the `/Roms/Doom (PRBOOM)` folder on your SD Card.
 
 ```
-/Roms/Doom (PRBOOM)/Mod Name/
-  Mod Name.m3u
-  Mod Name.wad
+/Roms/Doom (PRBOOM)/NextUI Doom.wad
 ```
 
-The `.m3u` file for `Mod Name` would contain:
+PWADs all depend on a particular IWAD as the base for running the PWAD. IWADs are placed in the `/Bios/PRBOOM` folder,
+and a list of them is available in the [Required BIOS](#required-bios) section. If all your PWADs use the same IWAD - for instance,
+`doom1.wad` then the IWAD can be placed directly in the `/Bios/PRBOOM` folder, and PrBoom will load the PWADs as expected.
 
 ```
-Mod Name.wad
+/Bios/PRBOOM/doom1.wad
 ```
 
-By default, PrBoom loads the base WADs - IWADs - from the Bios directory in a specific order, causing issues if all the IWADs
-are placed in the root of the `/Bios/PRBOOM` folder. To ensure the correct IWAD is loaded, NextUI supports creating a `doom.version`
-file in the folder containing the m3u.
+!!! note
+
+    All IWADs must be named using lowercase characters, including for the file extension.
+
+In many cases, you will want to load specific PWADs with specific IWADs. Due to how PrBoom detects IWADs and lacking
+information about which IWAD is required by a PWAD, PrBoom may load the incorrect IWAD for your PWAD. To combat this,
+NextUI supports using a `doom.version` file to specify the correct `/Bios/PRBOOM` subdirectory to reference. Omitting
+a `doom.version` text file will result in the default PrBoom using the default IWAD detection algorithm. It is recommended
+to use a `doom.version` text file in conjuction with the `m3u` text file format commonly used for [Disc-based games](#disc-based-games)
+to tie PWADs to have a clean directory structure.
+
+Using `NextUI Doom.wad` as an example, we would have the following directory structure in our Roms folder:
 
 ```
-/Roms/Doom (PRBOOM)/Mod Name/
-  Mod Name.m3u
-  Mod Name.wad
-  doom.version
+/Roms/Doom (PRBOOM)/NextUI Doom/NextUI Doom.wad
+/Roms/Doom (PRBOOM)/NextUI Doom/NextUI Doom.m3u
+/Roms/Doom (PRBOOM)/NextUI Doom/doom.version
 ```
 
-The `doom.version` file maps to a subfolder in the `/Bios/PRBOOM` folder that should be used to load dependencies, such as
-the IWAD or custom mp3 files. For instance, if the PWAD requires `Doom` (commercial) and the `doom.wad` is in `/Bios/PRBOOM/doom2`, then
-the contents of the `doom.version` file would be:
+The contents of the newly created `NextUI Doom.m3u` text would contain:
+
+```
+NextUI Doom.wad
+```
+
+While the newly created `doom.version` text file would contain the following:
 
 ```
 doom1
 ```
 
-Users can then add the following files to `/Bios/PRBOOM/doom1` and NextUI will load them when starting the selected PWAD:
+The `doom.version` text file maps to a subfolder in the `/Bios/PRBOOM` folder that should be used to load dependencies, such as
+the IWAD or custom mp3 files. In the case of Doom 1 (Commercial), the commercial IWAD would be placed on the disk like so:
 
 ```
-doom1.wad
-intro.mp3
-e1m1.mp3
+/Bios/PRBOOM/doom1/doom1.wad
 ```
 
-!!! note
+Music for particular IWADs can also be customized by placing the [correctly named files](https://docs.libretro.com/library/prboom/#music) into the correct `/Bios/PRBOOM` subdirectory:
 
-    The PrBoom core _requires_ the `prboom.wad` IWAD file. It can be placed in `/Bios/PRBOOM` and NextUI will automatically
-    load it with the specified Doom version for your IWAD.
+```
+/Bios/PRBOOM/doom1/intro.mp3
+/Bios/PRBOOM/doom1/e1m1.mp3
+```
+
+To load our `NextUI Doom 2.wad` megawad with only the title music changing, the following would be a sample file structure:
+
+```
+/Roms/Doom (PRBOOM)/NextUI Doom/NextUI Doom 2.wad
+/Roms/Doom (PRBOOM)/NextUI Doom/NextUI Doom 2.m3u
+/Roms/Doom (PRBOOM)/NextUI Doom/doom.version
+/Bios/PRBOOM/doom2/doom1.wad
+/Bios/PRBOOM/doom2/dm2ttl.mp3
+```
+
+The contents of `NextUI Doom 2.m3u` text file would be:
+
+```
+NextUI Doom 2.wad
+```
+
+And the `doom.version` text file would have the following as it's contents:
+
+```
+doom2
+```
 
 ---

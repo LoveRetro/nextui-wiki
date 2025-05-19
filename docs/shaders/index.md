@@ -91,6 +91,7 @@ This is because LINEAR now only has to invent half as many pixels as it’s work
 ![LINEAR with 2x NEAREST prescale](https://github.com/user-attachments/assets/a4c9b575-d010-493b-93c8-d1dd7b666b79)
 
 Pay special attention to how all the pixels on the ground are now equeally square sized, compared to the previous example without shaders where the pixels where unequal because of the stretching. The shaders now made sure everything stretches nicely and the pixels don't deform. 
+
 ---
 
 ## How to Set This Up

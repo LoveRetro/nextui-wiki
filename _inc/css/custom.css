@@ -1,0 +1,133 @@
+[data-md-color-scheme="nextui-wiki-light"] {
+    --md-primary-fg-color: #292929;
+    --md-primary-bg-color: #eeeeee;
+    --md-primary-bg-color--light: #bbbbbb;
+
+    --md-accent-fg-color: #9B2256;
+    --md-accent-fg-color--transparent: #cccccc;
+
+    --md-default-fg-color: #111111;
+    --md-default-fg-color--light: #292929;
+    --md-default-fg-color--lighter: #cccccc;
+    --md-default-fg-color--lightest: #cccccc;
+    --md-default-bg-color: #dddddd;
+    --md-default-bg-color--light: #dddddd;
+    --md-default-bg-color--lighter: #dddddd;
+    --md-default-bg-color--lightest: #dddddd;
+
+    --md-typeset-color: #111111;
+
+    --md-typeset-a-color: #9B2256;
+
+    --md-typeset-table-color: #cccccc;
+    --md-typeset-table-color--light: #eeeeee;
+
+    --md-footer-bg-color: #111111;
+
+    --md-typeset-kbd-color: #eeeeee;
+    --md-typeset-kbd-accent-color: #dddddd;
+    --md-typeset-kbd-border-color: #bbbbbb;
+
+    --md-code-bg-color: #eee;
+    --md-code-fg-color: #111;
+    --md-code-hl-operator-color: #111;
+    --md-code-hl-variable-color: #111;
+    --md-code-hl-comment-color: #999;
+    --md-code-hl-punctuation-color: #111;
+}
+
+[data-md-color-scheme="nextui-wiki-dark"] {
+    --md-primary-fg-color: #111111;
+    --md-primary-bg-color: #eeeeee;
+    --md-primary-bg-color--light: #bbbbbb;
+
+    --md-accent-fg-color: #9B2256;
+    --md-accent-fg-color--transparent: #333333;
+
+    --md-default-fg-color: #eeeeee;
+    --md-default-fg-color--light: #eeeeee;
+    --md-default-fg-color--lighter: #888888;
+    --md-default-fg-color--lightest: #444444;
+    --md-default-bg-color: #292929;
+    --md-default-bg-color--light: #292929;
+    --md-default-bg-color--lighter: #292929;
+    --md-default-bg-color--lightest: #292929;
+
+    --md-typeset-color: #eeeeee;
+
+    --md-typeset-a-color: #9B2256;
+
+    --md-typeset-table-color: #333333;
+    --md-typeset-table-color--light: #444444;
+
+    --md-footer-bg-color: #111111;
+
+    --md-typeset-kbd-color: #555;
+    --md-typeset-kbd-accent-color: #444;
+    --md-typeset-kbd-border-color: #222;
+
+    --md-code-bg-color: #111;
+    --md-code-fg-color: #fff;
+    --md-code-hl-operator-color: #fff;
+    --md-code-hl-variable-color: #fff;
+    --md-code-hl-comment-color: #999;
+    --md-code-hl-punctuation-color: #fff;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+    font-weight: 700;
+}
+
+.md-typeset h1 {
+    margin: 0 0 0.64em;
+}
+
+.md-typeset h2 {
+    margin: 1em 0 0.64em;
+}
+
+.md-typeset h3 {
+    margin: 0.64em 0 0.8em;
+}
+
+.md-header__inner {
+    padding: 0.4rem 0.2rem;
+}
+
+.md-main__inner {
+    margin-top: 0.5rem;
+    padding-top: 0;
+}
+
+.md-typeset table:not([class]) {
+    font-size: .74rem;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    background-color: inherit;
+    color: inherit
+}
+
+
+a {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .docs-logo {
+        width: 75% !important;
+    }
+}
+
+.docs-logo {
+    max-width: 500px !important;
+}
+
+[data-md-color-scheme="nextui-wiki-light"] .docs-logo-dark {
+    display: none !important;
+}
+
+[data-md-color-scheme="nextui-wiki-dark"] .docs-logo-light {
+    display: none !important;
+}
+

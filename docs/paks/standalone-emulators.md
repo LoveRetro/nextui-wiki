@@ -8,7 +8,7 @@
 - [Nintendo 64](https://github.com/josegonzalez/minui-n64-pak)
 - [Pico-8](https://github.com/josegonzalez/minui-pico-8-pak)
 - [PSP](https://github.com/ben16w/minui-psp)
-- [Portmaster](https://github.com/ben16w/minui-portmaster)—**TrimUI_EX Not Required!!**
+- [Portmaster](https://github.com/ben16w/minui-portmaster) — TrimUI_EX Not Required!
 
 ### Installing Standalone Emulators
 

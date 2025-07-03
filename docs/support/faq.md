@@ -57,12 +57,14 @@ Already a NextUI user? Follow our [updating guide](../usage.md#updating-an-exist
 
 ### Available as community paks
 
-* ScummVM
+* DOS (dosbox)
 * Nintendo 64 (mupen64plus)
 * Nintendo DS (DraStic)
-* Sony PlayStation Portable (PPSSPP)
+* ScummVM
 * Sega Dreamcast (flycast)
+* Sony PlayStation Portable (PPSSPP)
 * Portmaster
+* Wonderswan (mednafen_wonderswan)
 
 ---
 
